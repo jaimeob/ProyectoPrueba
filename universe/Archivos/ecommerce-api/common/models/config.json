@@ -1,0 +1,151 @@
+{
+  "name": "Config",
+  "plural": "configs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "instanceId": {
+      "type": "number"
+    },
+    "businessUnit": {
+      "type": "number"
+    },
+    "favicon": {
+      "type": "string"
+    },
+    "mainLogo": {
+      "type": "string"
+    },
+    "navbarLogo": {
+      "type": "string"
+    },
+    "footerLogo": {
+      "type": "string"
+    },
+    "sizeLogo": {
+      "type": "number"
+    },
+    "sizeNavbarLogo": {
+      "type": "number"
+    },
+    "sizeFooterLogo": {
+      "type": "number"
+    },
+    "hiMessageMessengerFB": {
+      "type": "string"
+    },
+    "faviconTitle": {
+      "type": "string"
+    },
+    "faviconTitleEN": {
+      "type": "string"
+    },
+    "mainTitle": {
+      "type": "string"
+    },
+    "mainTitleEN": {
+      "type": "string"
+    },
+    "welcomeTitle": {
+      "type": "string"
+    },
+    "welcomeTitleEN": {
+      "type": "string"
+    },
+    "welcomeDescription": {
+      "type": "string"
+    },
+    "welcomeDescriptionEN": {
+      "type": "string"
+    },
+    "topBarBackgroundColor": {
+      "type": "string"
+    },
+    "navbarBackgroundColor": {
+      "type": "string"
+    },
+    "footerBackgroundColor": {
+      "type": "string"
+    },
+    "navbarTextColor": {
+      "type": "string"
+    },
+    "primaryColor": {
+      "type": "string"
+    },
+    "secondaryColor": {
+      "type": "string"
+    },
+    "contrastColor": {
+      "type": "string"
+    },
+    "textMainColor": {
+      "type": "string"
+    },
+    "textSecondaryColor": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "urlTerms": {
+      "type": "string"
+    },
+    "urlPrivacy": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "googleAnalyticsId": {
+      "type": "string"
+    },
+    "emailProtocol": {
+      "type": "string"
+    },
+    "emailHost": {
+      "type": "string"
+    },
+    "emailPort": {
+      "type": "number"
+    },
+    "emailUser": {
+      "type": "string"
+    },
+    "emailPass": {
+      "type": "string"
+    },
+    "es": {
+      "type": "string"
+    },
+    "en": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "updatedAt": {
+      "type": "date"
+    },
+    "status": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "validations": [],
+  "relations": {
+    "home": {
+      "type": "hasOne",
+      "model": "Home",
+      "foreignKey": "configId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,118 @@
+{
+  "name": "Product",
+  "plural": "products",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "object"
+    },
+    "code": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "categoryCode": {
+      "type": "number"
+    },
+    "brandCode": {
+      "type": "number"
+    },
+    "originalBrandCode": {
+      "type": "number"
+    },
+    "genderCode": {
+      "type": "number"
+    },
+    "styleCode": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    },
+    "colorCode": {
+      "type": "number"
+    },
+    "modelCode": {
+      "type": "string"
+    },
+    "sublineCode": {
+      "type": "number"
+    },
+    "price": {
+      "type": "number"
+    },
+    "savingPrice": {
+      "type": "number"
+    },
+    "percentagePrice": {
+      "type": "number"
+    },
+    "creditPrice": {
+      "type": "number"
+    },
+    "discountPrice": {
+      "type": "number"
+    },
+    "partiality": {
+      "type": "number"
+    },
+    "tags": {
+      "type": "array"
+    },
+    "sizes": {
+      "type": "array"
+    },
+    "buyDate": {
+      "type": "date"
+    },
+    "businesses": {
+      "type": "array"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "gender": {
+      "type": "hasOne",
+      "model": "Gender",
+      "foreignKey": "code",
+      "primaryKey": "genderCode"
+    },
+    "brand": {
+      "type": "hasOne",
+      "model": "Brand",
+      "foreignKey": "code",
+      "primaryKey": "brandCode"
+    },
+    "subline": {
+      "type": "hasOne",
+      "model": "Subline",
+      "foreignKey": "code",
+      "primaryKey": "sublineCode"
+    },
+    "originalBrand": {
+      "type": "hasOne",
+      "model": "Brand",
+      "foreignKey": "code",
+      "primaryKey": "originalBrandCode"
+    },
+    "color": {
+      "type": "hasOne",
+      "model": "Color",
+      "foreignKey": "code",
+      "primaryKey": "colorCode"
+    },
+    "detail": {
+      "type": "hasOne",
+      "model": "ProductDetail",
+      "foreignKey": "code",
+      "primaryKey": "code"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,420 @@
+{
+    "General": {
+        "error": "Lo sentimos. Ocurrió un problema inesperado. Por favor, intenta de nuevo más tarde.",
+        "errorNewPassword": "Lo sentimos. No se pudo actualizar tu contraseña. Intenta de nuevo más tarde.",
+        "duplicateError": "Recurso restringido. Contacta al administrador del sistema.",
+        "notFound": "No se encontró nada por aquí...",
+        "formRequiredError": "Los campos marcados ( * ) son obligatorios.",
+        "loadTitle": "Cargando...",
+        "loadDescription": "Espere un momento por favor.",
+        "supplyError": "Debes ingresar al menos un producto para surtir esta solicitud.",
+        "minZero": "El valor ingresado debe ser mayor a cero.",
+        "maxStock": "El valor ingresado no debe superar el stock máximo en almacén."
+    },
+    "Footer": {
+        "copyright": "Todos los derechos reservados.",
+        "terms": "Términos y condiciones",
+        "privacy": "Políticas de privacidad"
+    },
+    "Menu": {
+        "logout": "Cerrar sesión"
+    },
+    "LoginForm": {
+        "title": "Ingresar.",
+        "description": "Ingresa con tu correo electrónico y contraseña para acceder a todas las funcionalidades de la plataforma.",
+        "placeholderEmail": "Correo electrónico *",
+        "placeholderPassword": "Contraseña *",
+        "loginButton": "INGRESAR",
+        "recoveryButton": "Recuperar contraseña",
+        "loginMessage": "¿Todavía no tienes cuenta de usuario?",
+        "payButton": "Paga aquí",
+        "registerButton": "Crear cuenta",
+        "invalidPassword": "Intenta de nuevo con una contraseña válida.",
+        "invalidEmail": "Correo electrónico inválido. Intenta de nuevo con otro correo.",
+        "loginFormValidation": "Correo electrónico y/o contraseña inválidos.",
+        "loginFormRequired": "Los campos marcados ( * ) son obligatorios."
+    },
+    "RecoveryPassword": {
+        "titleWithToken": "Tu nueva contraseña.",
+        "title": "Recuperar contraseña.",
+        "descriptionWithToken": "Ingresa y confirma tu nueva contraseña. Es necesario elegir una contraseña segura de 8 caracteres o más. ¡Gracias!",
+        "description": "Para recuperar tu contraseña es necesario que proporciones tu correo electrónico. Te enviaremos los pasos a seguir para continuar con el proceso.",
+        "placeholderEmail": "Correo electrónico *",
+        "placeholderNewPassword": "Nueva contraseña (8 caracteres o más) *",
+        "placeholderConfirmNewPassword": "Confirmar nueva contraseña *",
+        "loginButton": "Iniciar sesión",
+        "confirmButton": "CONFIRMAR",
+        "recoveryMessage": "¿Todavía no tienes cuenta de usuario?",
+        "payButton": "Paga aquí",
+        "registerButton": "Crear cuenta",
+        "okNewPassword": "Se actualizó correctamente tu contraseña. Ahora puedes ingresar.",
+        "emailRequired": "El correo electrónico es obligatorio.",
+        "invalidEmail": "Correo electrónico inválido. Intenta de nuevo con otro correo.",
+        "emailSended": "Revisa tu correo electrónico para continuar."
+    },
+    "Catalog": {
+        "title": "Catálogos.",
+        "description": "Directorio de colaboradores Calzzapato.",
+        "searchText": "Buscar colaborador...",
+        "addButton": "Nuevo",
+        "options": {
+            "update": "Editar",
+            "detail": "Ver detalle",
+            "delete": "Archivar"
+        },
+        "params": {
+            "id": "ID",
+            "firstName": "Nombre",
+            "lastName": "Apellidos",
+            "email": "Correo electrónico",
+            "phone": "Teléfono",
+            "department": "Departamento",
+            "job": "Puesto",
+            "statusDetail.name": "Estatus"
+        },
+        "modal": {
+            "title": "Agregar colaborador.",
+            "description": "Captura los datos del colaborador.",
+            "titleEdit": "Editar.",
+            "descriptionEdit": "Edita los datos del colaborador.",
+            "cancelButton": "CANCELAR",
+            "confirmButton": "CONFIRMAR"
+        },
+        "deleteTitle": "¿Desea deshabilitar el colaborador?",
+        "deleteDescription": "Se deshabilitará el colaborador con ID:",
+        "emptyTitle": "¡Directorio vacio!",
+        "emptyDescription": "No hay colaboradores para mostrar. Agrega un nuevo colaborador haciendo click en el botón de abajo.",
+        "addOk": "Se agregó correctamente el nuevo colaborador.",
+        "existOk": "Se habilitó nuevamente el colaborador.",
+        "editOk": "Se editó correctamente la información del colaborador.",
+        "deleteOk": "Se deshabilitó correctamente el colaborador."
+    },
+    "Directory": {
+        "title": "Directorio.",
+        "description": "Directorio de colaboradores Calzzapato.",
+        "searchText": "Buscar colaborador...",
+        "addButton": "Nuevo",
+        "options": {
+            "update": "Editar",
+            "detail": "Ver detalle",
+            "delete": "Archivar"
+        },
+        "params": {
+            "id": "ID",
+            "firstName": "Nombre",
+            "lastName": "Apellidos",
+            "email": "Correo electrónico",
+            "phone": "Teléfono",
+            "department": "Departamento",
+            "job": "Puesto",
+            "statusDetail.name": "Estatus"
+        },
+        "modal": {
+            "title": "Agregar colaborador.",
+            "description": "Captura los datos del colaborador.",
+            "titleEdit": "Editar.",
+            "descriptionEdit": "Edita los datos del colaborador.",
+            "cancelButton": "CANCELAR",
+            "confirmButton": "CONFIRMAR"
+        },
+        "deleteTitle": "¿Desea deshabilitar el colaborador?",
+        "deleteDescription": "Se deshabilitará el colaborador con ID:",
+        "emptyTitle": "¡Directorio vacio!",
+        "emptyDescription": "No hay colaboradores para mostrar. Agrega un nuevo colaborador haciendo click en el botón de abajo.",
+        "addOk": "Se agregó correctamente el nuevo colaborador.",
+        "existOk": "Se habilitó nuevamente el colaborador.",
+        "editOk": "Se editó correctamente la información del colaborador.",
+        "deleteOk": "Se deshabilitó correctamente el colaborador."
+    },
+    "Office": {
+        "title": "Despachos.",
+        "description": "Directorio de despachos de externos.",
+        "searchText": "Buscar despacho...",
+        "addButton": "Nuevo despacho",
+        "options": {
+            "update": "Editar despacho",
+            "detail": "Ver detalle",
+            "delete": "Archivar"
+        },
+        "params": {
+            "id": "ID",
+            "socialName": "Razón social",
+            "rfc": "RFC",
+            "legalRepresentative": "Representante",
+            "phone": "Teléfono",
+            "user.email": "Usuario asociado",
+            "creator.name": "Creado por",
+            "createdAt": "Fecha alta",
+            "statusDetail.name": "Estatus"
+        },
+        "modal": {
+            "title": "Agregar despacho.",
+            "description": "Captura los datos del despacho.",
+            "titleEdit": "Editar despacho.",
+            "descriptionEdit": "Edita los datos del despacho.",
+            "cancelButton": "CANCELAR",
+            "confirmButton": "CONFIRMAR"
+        },
+        "deleteTitle": "¿Desea deshabilitar el despacho?",
+        "deleteDescription": "Se deshabilitará el despacho con ID:",
+        "emptyTitle": "¡Sin despachos!",
+        "emptyDescription": "No hay despachos para mostrar. Agrega un nuevo despacho haciendo click en el botón de abajo.",
+        "addOk": "Se agregó correctamente el nuevo despacho.",
+        "existOk": "Se habilitó nuevamente el despacho.",
+        "editOk": "Se editó correctamente la información del despacho.",
+        "deleteOk": "Se deshabilitó correctamente el despacho."
+    },
+    "Portfolio": {
+        "title": "Cartera.",
+        "description": "Cartera Grupo Calzzapato.",
+        "searchText": "Buscar cuenta...",
+        "addButton": "",
+        "options": {
+            "update": "Editar despacho",
+            "detail": "Ver detalle",
+            "turnAccount": "Turnar cuenta",
+            "turnAccounts": "Turnar cuentas",
+            "delete": "Archivar"
+        },
+        "params": {
+            "id": "ID",
+            "identificator": "Identificador",
+            "name": "Nombre",
+            "branch": "Plaza",
+            "debit": "Adeudo",
+            "totalTurn": "Turnado",
+            "totalCollection": "Recuperado",
+            "totalRecover": "Por recuperar",
+            "pipelineDetail.name": "Estatus"
+        },
+        "modal": {
+            "title": "Agregar despacho.",
+            "description": "Captura los datos del despacho.",
+            "titleEdit": "Editar despacho.",
+            "descriptionEdit": "Edita los datos del despacho.",
+            "cancelButton": "CANCELAR",
+            "confirmButton": "CONFIRMAR"
+        },
+        "deleteTitle": "¿Desea deshabilitar el despacho?",
+        "deleteDescription": "Se deshabilitará el despacho con ID:",
+        "emptyTitle": "¡Sin despachos!",
+        "emptyDescription": "No hay despachos para mostrar. Agrega un nuevo despacho haciendo click en el botón de abajo.",
+        "addOk": "Se agregó correctamente el nuevo despacho.",
+        "existOk": "Se habilitó nuevamente el despacho.",
+        "editOk": "Se editó correctamente la información del despacho.",
+        "deleteOk": "Se deshabilitó correctamente el despacho."
+    },
+    "Turn": {
+        "title": "Cuentas turnadas.",
+        "description": "Cuentas turnadas a externos.",
+        "searchText": "Buscar cuenta...",
+        "addButton": "",
+        "options": {
+            "update": "Editar",
+            "detail": "Ver detalle",
+            "registerCollection": "Registrar cobro",
+            "registerCollections": "Registrar cobros",
+            "delete": "Archivar"
+        },
+        "params": {
+            "accountIdentificator": "Identificador",
+            "account.name": "Nombre",
+            "external.email": "Asignado a",
+            "amount": "Monto asignado",
+            "internal.email": "Asignado por",
+            "createdAt": "Fecha asignación",
+            "pipelineDetail.name": "Estatus"
+        },
+        "modal": {
+            "title": "Agregar despacho.",
+            "description": "Captura los datos del despacho.",
+            "titleEdit": "Editar despacho.",
+            "descriptionEdit": "Edita los datos del despacho.",
+            "cancelButton": "CANCELAR",
+            "confirmButton": "CONFIRMAR"
+        },
+        "deleteTitle": "¿Desea deshabilitar el despacho?",
+        "deleteDescription": "Se deshabilitará el despacho con ID:",
+        "emptyTitle": "¡No hay cuentas turnadas!",
+        "emptyDescription": "No hay cuentas turnadas por el momento. Ingresa al módulo de \"Cartera\" para empezar a turnar cuentas.",
+        "addOk": "Se agregó correctamente el nuevo despacho.",
+        "existOk": "Se habilitó nuevamente el despacho.",
+        "editOk": "Se editó correctamente la información del despacho.",
+        "deleteOk": "Se deshabilitó correctamente el despacho."
+    },
+    "MyTurn": {
+        "title": "Mis cuentas turnadas.",
+        "description": "Listado de cuentas turnadas.",
+        "searchText": "Buscar cuenta...",
+        "addButton": "",
+        "options": {
+            "update": "Editar",
+            "detail": "Ver detalle",
+            "registerCollection": "Registrar cobro",
+            "registerCollections": "Registrar multiples cobros",
+            "delete": "Archivar"
+        },
+        "params": {
+            "accountIdentificator": "Identificador",
+            "account.name": "Nombre",
+            "external.email": "Asignado a",
+            "amount": "Monto asignado",
+            "internal.email": "Asignado por",
+            "createdAt": "Fecha asignación",
+            "pipelineDetail.name": "Estatus"
+        },
+        "modal": {
+            "title": "Agregar despacho.",
+            "description": "Captura los datos del despacho.",
+            "titleEdit": "Editar despacho.",
+            "descriptionEdit": "Edita los datos del despacho.",
+            "cancelButton": "CANCELAR",
+            "confirmButton": "CONFIRMAR"
+        },
+        "deleteTitle": "¿Desea deshabilitar el despacho?",
+        "deleteDescription": "Se deshabilitará el despacho con ID:",
+        "emptyTitle": "¡Sin asignaciones!",
+        "emptyDescription": "No hay cuentas turnadas para ti en este momento. Contacta al administrador del sistema.",
+        "addOk": "Se agregó correctamente el nuevo despacho.",
+        "existOk": "Se habilitó nuevamente el despacho.",
+        "editOk": "Se editó correctamente la información del despacho.",
+        "deleteOk": "Se deshabilitó correctamente el despacho."
+    },
+    "Collection": {
+        "title": "Cobranza.",
+        "description": "Recuperación de cuentas",
+        "searchText": "Buscar cuenta...",
+        "addButton": "",
+        "options": {
+            "update": "Editar",
+            "detail": "Ver detalle",
+            "delete": "Archivar"
+        },
+        "params": {
+            "turn.account.identificator": "Identificador",
+            "turn.account.name": "Nombre",
+            "register.email": "Registrado por",
+            "amount": "Monto recuperado",
+            "evidence": "Evidencia",
+            "createdAt": "Fecha registro",
+            "pipelineDetail.name": "Estatus"
+        },
+        "modal": {
+            "title": "Agregar despacho.",
+            "description": "Captura los datos del despacho.",
+            "titleEdit": "Editar despacho.",
+            "descriptionEdit": "Edita los datos del despacho.",
+            "cancelButton": "CANCELAR",
+            "confirmButton": "CONFIRMAR"
+        },
+        "deleteTitle": "¿Desea deshabilitar el despacho?",
+        "deleteDescription": "Se deshabilitará el despacho con ID:",
+        "emptyTitle": "¡Sin despachos!",
+        "emptyDescription": "No hay despachos para mostrar. Agrega un nuevo despacho haciendo click en el botón de abajo.",
+        "addOk": "Se agregó correctamente el nuevo despacho.",
+        "existOk": "Se habilitó nuevamente el despacho.",
+        "editOk": "Se editó correctamente la información del despacho.",
+        "deleteOk": "Se deshabilitó correctamente el despacho."
+    },
+    "OfficeForm": {
+        "title": "Nuevo despacho.",
+        "description": "Captura los datos generales del despacho.",
+        "titleUpdate": "Editar solicitud.",
+        "descriptionUpdate": "Edita los datos generales de la solicitud.",
+        "autocompletes": {
+            "state": "Estado",
+            "city": "Ciudad"
+        },
+        "labels": {
+            "socialName": "Razón social",
+            "rfc": "RFC",
+            "legalRepresentative": "Representante legal",
+            "email": "Correo electrónico",
+            "phone": "Teléfono de contacto",
+            "comments": "Observaciones o comentarios adicionales"
+        },
+        "uploadButton": "Adjuntar documentación",
+        "uploaderModal": {
+            "title": "Agregar documentación.",
+            "description": "Documentación del despacho."
+        },
+        "addressButton": "Agregar dirección fiscal",
+        "addressModal": {
+            "title": "Agregar dirección fiscal.",
+            "description": "Dirección fiscal del despacho.",
+            "zip": "Código postal",
+            "state": "Estado",
+            "city": "Ciudad",
+            "suburb": "Colonia",
+            "street": "Calle de la dirección",
+            "exteriorNumber": "Número exterior",
+            "interiorNumber": "Número interior",
+            "cancelButton": "CANCELAR",
+            "confirmButton": "CONFIRMAR"
+        },
+        "search": {
+            "title": "Buscador de usuarios",
+            "emptyTitle": "No hay usuario asignado.",
+            "emptyDescription": "Utiliza el buscador para asignar el usuario de acceso del despacho.",
+            "headers": {
+                "email": "Correo electrónico",
+                "name": "Nombre",
+                "createdAt": "Fecha de alta"
+            }
+        },
+        "quickModal": {
+            "users": {
+                "title": "Crear usuario.",
+                "description": "Captura los datos del nuevo usuario.",
+                "params": {
+                    "name": "Nombre",
+                    "email": "Email"
+                },
+                "cancelButton": "CANCELAR",
+                "confirmButton": "CONFIRMAR"
+            },
+            "states": {
+                "title": "Agregar estado.",
+                "description": "Captura los datos del nuevo estado.",
+                "params": {
+                    "name": "Nombre"
+                },
+                "cancelButton": "CANCELAR",
+                "confirmButton": "CONFIRMAR"
+            },
+            "cities": {
+                "title": "Agregar ciudad.",
+                "description": "Captura los datos de la nueva ciudad.",
+                "params": {
+                    "name": "Nombre"
+                },
+                "cancelButton": "CANCELAR",
+                "confirmButton": "CONFIRMAR"
+            }
+        },
+        "addOk": "Se creó correctamente la solicitud.",
+        "confirmCreateOfficeButton": "GUARDAR DESPACHO",
+        "confirmUpdateOrderButton": "GUARDAR DESPACHO",
+        "cancelButton": "CANCELAR"
+    },
+    "Uploader": {
+        "documentType": "Tipo de documento",
+        "labelButton": "Seleccionar archivo",
+        "fileOk": "Archivo cargado correctamente.",
+        "selectFilePlaceholder": "No se ha seleccionado ningún archivo.",
+        "commentsLabel": "Comentarios",
+        "titleDocumentList": "Documentos cargados",
+        "loadButton": "CARGAR DOCUMENTO",
+        "cancelButton": "CANCELAR",
+        "confirmButton": "CONFIRMAR",
+        "validations": {
+            "emptyImage": "No se ha seleccionado un archivo válido.",
+            "emptyDocumentTypeId": "No se ha seleccionado el tipo de documento.",
+            "ok": "Documento cargado correcamente."
+        }
+    },
+    "DeleteDialog": {
+        "cancelButton": "CANCELAR",
+        "confirmButton": "CONFIRMAR"
+    }
+}

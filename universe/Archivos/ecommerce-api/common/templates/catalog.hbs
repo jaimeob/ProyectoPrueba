@@ -1,0 +1,202 @@
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border: none;
+      font-family: "IBM Plex Sans", sans-serif;
+    }
+  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+</head>
+
+<body>
+
+  <div style="height: 100%">
+    <div style="
+        background-image: url({{coverImage}});
+        width: 100%;
+        height: 85%;
+        background-size: cover;
+      "></div>
+    <div style="
+          background-color: {{primaryColor}};
+          height: 15%;
+          color: white;
+          font-size: 40px;
+          display: inline-block;
+          width: 70%;
+          text-align: center;
+          overflow: hidden;  text-overflow: ellipsis;
+        ">
+      <p style="position: relative; top: 30%; transform: translateY(-50%);">
+        {{catalogName}}
+      </p>
+    </div>
+    <div style="
+          display: inline-block;
+          width: 30%;
+          height: 15%;
+          background-image: url({{logo}});
+          background-color: white;
+          background-size: 200px;
+          background-position: center;
+          background-repeat: no-repeat;
+          float: right;
+          text-align: center;
+        "></div>
+  </div>
+
+  {{#pages}}
+  <div style="height: 100%">
+    <div style="
+          background-color: {{../primaryColor}};
+          height: 5%;
+          color: white;
+          font-size: 20px;
+          display: inline-block;
+          width: 80%;
+          overflow: hidden;  text-overflow: ellipsis;
+        ">
+      <p style="position: relative; top: 20%; transform: translateY(-50%);">
+        {{../catalogName}}
+      </p>
+    </div>
+    <div style="
+          display: inline-block;
+          width: 20%;
+          height: 5%;
+          background-image: url({{../logo}});
+          background-color: white;
+          background-size: 100px;
+          background-position: center;
+          background-repeat: no-repeat;
+          float: right;
+          text-align: center;
+        "></div>
+    {{#if ../configs.isList}}
+    {{#this}}
+    <div class="row" style="height: {{../../configs.divHeight}}%; margin-bottom:0;">
+      <div class="col s{{../../configs.listProductImageSize}}"
+        style="background-image: url({{productImage}}); background-size:contain; background-repeat:no-repeat; background-position:right; height:100%;">
+      </div>
+      <div class="col s{{../../configs.listProductNameSize}} valign-wrapper" style=" height:100%; ">
+        <div style="display:inline-block;">
+
+          <p style="font-size: 16; font-weight:500;">
+            {{productName}}
+          </p>
+
+          {{#if hasBluePoints}}
+          <p style="font-size: 10; color:{{../../primaryColor}}">
+            +{{productBluePoints}}
+            Puntos azules
+          </p>
+          {{/if}}
+        </div>
+      </div>
+      <div class="col s1 valign-wrapper" style="height:100%; ">
+        <div style="display:inline-block;">
+          {{#if hasDiscount}}
+          <span style="font-size: 12; color:#57aa64;">-{{productDiscountPercentage}}%</span>
+          <del>
+            <span style="font-size: 12; color:grey;">${{productDiscountPrice}}</span>
+          </del>
+          {{/if}}
+          <p style="font-size: 16; color:{{../../primaryColor}}; font-weight:500;">${{productPrice}}</p>
+        </div>
+      </div>
+      <div class="col s2 valign-wrapper" style="height: 100%; ">
+        <a href={{productUrl}}
+          style="width: 100%; background: {{../../primaryColor}}; color: white; padding: 8px; border-radius: 24px; font-size: 10px; text-decoration: none; text-align:center;">COMPRAR
+          AHORA</a>
+      </div>
+    </div>
+    {{/this}}
+    {{else}}
+    <div class="row" style="margin-bottom: 0">
+      {{#this}}
+      <div class="col s{{../../configs.columnSpace}} valign-wrapper"
+        style=" height:{{../../configs.divHeight}}%; display:inline-block; padding-left:5; padding-right:5;">
+        <div
+          style="background-image: url({{productImage}}); background-size:cover; height:65%; width:65%; margin:0 auto; background-repeat:no-repeat; background-position:center;">
+        </div>
+        <div
+          style="float:left; width:65%;  font-size: 16; height: 45px; overflow: hidden;  text-overflow: ellipsis; font-weight:500;">
+          {{productName}}
+        </div>
+        <div style="float:right; width:30%; text-align:center;">
+          {{#if hasDiscount}}
+          <span style="font-size: 12; color:#57aa64;">-{{productDiscountPercentage}}%</span>
+          <del>
+            <span style="font-size: 12; color:grey;">${{productDiscountPrice}}</span>
+          </del>
+          {{/if}}
+          <p
+            style="font-size: 16; color:{{../../primaryColor}}; text-align:center; font-weight:500; margin-bottom:10px;">
+            ${{productPrice}}
+          </p>
+          <a href={{productUrl}}
+            style="width: 100%; background: {{../../primaryColor}}; color: white; padding: {{../../configs/buyNowButtonPadding}}; border-radius: 24px; font-size: {{../../configs/buyNowButtonFontSize}}; text-decoration: none; text-align:center; margin-top:10px;">COMPRAR
+            AHORA</a>
+        </div>
+        {{#if hasBluePoints}}
+        <div style="float:left; width:75%;  font-size: 10; color:{{../../primaryColor}}">
+          +{{productBluePoints}}
+          Puntos azules
+        </div>
+        {{/if}}
+      </div>
+      {{/this}}
+    </div>
+    {{/if}}
+  </div>
+  {{/pages}}
+  <div style="height: 100%">
+    <div style="
+        background-image: url({{backCoverImage}});
+        width: 100%;
+        height: 95%;
+        background-size: cover;
+      "></div>
+    <div style="
+          background-color: {{primaryColor}};
+          height: 5%;
+          color: white;
+          font-size: 20px;
+          display: inline-block;
+          width: 80%;
+          overflow: hidden;  text-overflow: ellipsis;
+        ">
+      <p style="position: relative; top: 20%; transform: translateY(-50%);">
+        {{catalogName}}
+      </p>
+    </div>
+    <div style="
+          display: inline-block;
+          width: 20%;
+          height: 5%;
+          background-image: url({{logo}});
+          background-color: white;
+          background-size: 100px;
+          background-position: center;
+          background-repeat: no-repeat;
+          float: right;
+          text-align: center;
+        "></div>
+  </div>
+</body>
+
+</html>

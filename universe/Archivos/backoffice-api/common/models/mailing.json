@@ -1,0 +1,32 @@
+{
+  "name": "mailing",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "responsable": {
+      "type": "string"
+    },
+    "emails": {
+      "type": "number"
+    },
+    "campaign": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "images": {
+      "type": "array"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

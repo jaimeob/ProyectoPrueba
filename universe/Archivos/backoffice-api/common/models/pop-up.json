@@ -1,0 +1,32 @@
+{
+  "name": "PopUp",
+  "plural": "popups",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "configs": {
+      "type": "string"
+    },
+    "subscriberForm": {
+      "type": "number",
+      "default": 2
+    },
+    "status": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

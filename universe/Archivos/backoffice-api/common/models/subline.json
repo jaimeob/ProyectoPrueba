@@ -1,0 +1,39 @@
+{
+  "name": "Subline",
+  "plural": "sublines",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mysql": {
+    "table": "sublineas"
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "genero_id": {
+      "type": "number"
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "genero": {
+      "type": "belongsTo",
+      "model": "Gender",
+      "foreignKey": "genero_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

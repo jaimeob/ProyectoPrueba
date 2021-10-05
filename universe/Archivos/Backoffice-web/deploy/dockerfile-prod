@@ -1,0 +1,14 @@
+# build environment
+FROM node:13.12.0-alpine
+ENV REACT_APP_MODE=production
+ENV VIRTUAL_HOST=backoffice.calzzapato.com
+ENV LETSENCRYPT_HOST=backoffice.calzzapato.com
+ENV LETSENCRYPT_EMAIL=leveltechagency@gmail.com
+WORKDIR /app
+COPY package.json ./
+RUN npm install
+COPY . ./
+RUN npm run build:production
+RUN npm install -g serve
+EXPOSE 5000
+CMD [ "serve", "-s", "build" ]

@@ -1,0 +1,48 @@
+FROM node:12.18.3-alpine
+
+MAINTAINER Jesús Ruiz
+
+ENV STAGING=1
+
+ENV VIRTUAL_HOST=calzzasport.calzzapato.net
+
+ENV LETSENCRYPT_HOST=calzzasport.calzzapato.net
+
+ENV LETSENCRYPT_EMAIL=leveltechagency@gmail.com
+
+ENV UUID=2c8041f1-d7f1-462c-b39d-3ca68f252579
+
+WORKDIR /usr/app
+
+RUN npm install --global pm2
+
+COPY ./package*.json ./
+
+RUN npm install --production
+
+COPY ./ ./
+
+RUN npm run build
+
+RUN rm -rf \
+Makefile \
+docker-compose.yml \
+dockerfile-calzakids \
+dockerfile-calzzapato \
+dockerfile-calzzasport \
+dockerfile-kelder \
+dockerfile-urbanna \
+home \
+next.config.js \
+.dockerignore \
+.eslintrc.json \
+.gitignore \
+.git \
+.gitlab-ci.yml \
+src
+
+EXPOSE 3000
+
+USER node
+
+CMD [ "pm2-runtime", "start", "npm", "--", "start" ]

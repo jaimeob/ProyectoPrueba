@@ -1,0 +1,46 @@
+{
+  "name": "ProductStock",
+  "plural": "products-stock",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "zoneCode": {
+      "type": "string"
+    },
+    "zoneName": {
+      "type": "string"
+    },
+    "branchCode": {
+      "type": "string"
+    },
+    "branchName": {
+      "type": "string"
+    },
+    "productCode": {
+      "type": "string"
+    },
+    "stock": {
+      "type": "number"
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "updatedAt": {
+      "type": "date"
+    },
+    "status": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

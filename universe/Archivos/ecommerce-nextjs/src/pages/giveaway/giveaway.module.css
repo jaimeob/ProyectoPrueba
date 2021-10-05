@@ -1,0 +1,21 @@
+.listItem {
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+.inputTicket {
+    padding: 10px 0px !important;
+}
+
+.registerForm {
+    padding: 0px 0px 30px 0px !important;
+}
+
+.termsOfService {
+    padding: 0px 0px 30px 0px !important;
+}
+
+.terms {
+    font-size: 10px !important;
+}

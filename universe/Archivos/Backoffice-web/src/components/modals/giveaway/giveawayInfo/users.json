@@ -1,0 +1,141 @@
+[
+    {
+        "idUser": 123,
+        "name": "User1",
+        "total": 25092,
+        "tickets": [
+            {
+                "idticket": 1,
+                "sucursal": "Prueba aun mas larga para probar este campo",
+                "folio": "asdasdwqe",
+                "totalAmount": 12332,
+                "datePurchase": "12/07/2021"
+            },
+            {
+                "idticket": 2,
+                "sucursal": "Prueba2 Prueba aun mas larga para probar este campo",
+                "folio": "asdasdwqe",
+                "totalAmount": 12332,
+                "datePurchase": "12/07/2021"
+            },
+            {
+                "idticket": 3,
+                "sucursal": "Prueba3",
+                "folio": "asdasdwqe",
+                "totalAmount": 12332,
+                "datePurchase": "12/07/2021"
+            }
+        ]
+    },
+    {
+        "idUser": 1234,
+        "name": "User2",
+        "total": 25092,
+        "tickets": [
+            {
+                "idticket": 1,
+                "sucursal": "Prueba10 Prueba aun mas larga para probar este campo",
+                "folio": "asdasdwqe",
+                "totalAmount": 12332,
+                "totalTickets": 5
+            },
+            {
+                "idticket": 2,
+                "sucursal": "Prueba4",
+                "folio": "asdasdwqe",
+                "totalAmount": 12332,
+                "datePurchase": "12/07/2021"
+            },
+            {
+                "idticket": 3,
+                "sucursal": "Prueba5",
+                "folio": "asdasdwqe",
+                "totalAmount": 12332,
+                "datePurchase": "12/07/2021"
+            }
+        ]
+    },
+    {
+        "idUser": 12345,
+        "name": "User3",
+        "total": 25092,
+        "tickets": [
+            {
+                "idticket": 1,
+                "sucursal": "Prueba10 Prueba aun mas larga para probar este campo",
+                "folio": "asdasdwqe",
+                "totalAmount": 12332,
+                "totalTickets": 5
+            },
+            {
+                "idticket": 2,
+                "sucursal": "Prueba6",
+                "folio": "asdasdwqe",
+                "totalAmount": 12332,
+                "datePurchase": "12/07/2021"
+            },
+            {
+                "idticket": 3,
+                "sucursal": "Prueba7",
+                "folio": "asdasdwqe",
+                "totalAmount": 12332,
+                "datePurchase": "12/07/2021"
+            }
+        ]
+    },
+    {
+        "idUser": 123456,
+        "name": "User4",
+        "total": 25092,
+        "tickets": [
+            {
+                "idticket": 1,
+                "sucursal": "Prueba10",
+                "folio": "asdasdwqe",
+                "totalAmount": 12332,
+                "totalTickets": 5
+            },
+            {
+                "idticket": 2,
+                "sucursal": "Prueba8",
+                "folio": "asdasdwqe",
+                "totalAmount": 12332,
+                "datePurchase": "12/07/2021"
+            },
+            {
+                "idticket": 3,
+                "sucursal": "Prueba9",
+                "folio": "asdasdwqe",
+                "totalAmount": 12332,
+                "datePurchase": "12/07/2021"
+            }
+        ]
+    },
+    {
+        "idUser": 1234567,
+        "name": "User5",
+        "total": 25092,
+        "tickets": [
+            {
+                "idticket": 1,
+                "sucursal": "Prueba10",
+                "totalAmount": 12332,
+                "totalTickets": 5
+            },
+            {
+                "idticket": 2,
+                "sucursal": "Prueba10",
+                "folio": "asdasdwqe",
+                "totalAmount": 12332,
+                "datePurchase": "12/07/2021"
+            },
+            {
+                "idticket": 3,
+                "sucursal": "Prueba11",
+                "folio": "asdasdwqe",
+                "totalAmount": 12332,
+                "datePurchase": "12/07/2021"
+            }
+        ]
+    }
+]

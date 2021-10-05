@@ -1,0 +1,27 @@
+html {
+  height: 1000px;
+}
+
+a {
+  text-decoration: none!important;
+}
+
+#footerLogo:hover {
+  animation: animOpacity 1s forwards;
+
+}
+
+Paper {
+  box-shadow: '1px 1px 0.5em gray'!important;
+}
+
+@keyframes animOpacity {
+  from {
+    opacity: 0.5;
+    filter: grayscale(100%);
+  }
+  to {
+    opacity: 1.0;
+    filter: grayscale(0%);
+  }
+}

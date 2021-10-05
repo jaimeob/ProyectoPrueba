@@ -1,0 +1,36 @@
+{
+  "name": "CategoryInfo",
+  "plural": "categories-info",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "values": {
+      "type": "string"
+    },
+    "bannerId": {
+      "type": "number"
+    },
+    "brandBlockFilters": {
+      "type": "string"
+    },
+    "basicCategory": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

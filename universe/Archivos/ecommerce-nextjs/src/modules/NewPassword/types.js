@@ -1,0 +1,2 @@
+export const NEW_PASSWORD = 'NEW_PASSWORD'
+export const NEW_PASSWORD_ERROR = 'NEW_PASSWORD_ERROR'

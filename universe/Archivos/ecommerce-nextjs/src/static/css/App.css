@@ -1,0 +1,60 @@
+html {
+  height: 'auto';
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none!important;
+}
+
+.scrollbar::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1px hsla(0, 0%, 100%, .5);
+}
+
+.loading-svg {
+  margin: auto;
+  background: rgba(241, 242, 243, 0);
+  display: block;
+  shape-rendering: auto;
+  width: 80px;
+}
+
+.editor {
+  padding-top: 24px!important;
+}
+
+.editor img {
+  width: 100%;
+}
+
+.editor strong {
+  font-weight: 600;
+}
+
+.editor > p {
+  font-weight: 300;
+}
+
+.editor ul {
+  padding-left: 20px;
+  list-style: square;
+}
+
+.editor ul li {
+  float: none;
+  display: list-item;
+  font-weight: 300;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

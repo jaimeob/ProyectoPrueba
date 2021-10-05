@@ -1,0 +1,40 @@
+{
+  "name": "Info",
+  "plural": "info",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "instanceId": {
+      "type": "number"
+    },
+    "review": {
+      "type": "string"
+    },
+    "values": {
+      "type": "string"
+    },
+    "mission": {
+      "type": "string"
+    },
+    "vision": {
+      "type": "string"
+    },
+    "banner": {
+      "type": "string"
+    },
+    "status": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

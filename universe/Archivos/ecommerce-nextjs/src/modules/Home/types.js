@@ -1,0 +1,2 @@
+export const HOME_MENU_TREE = 'HOME_MENU_TREE'
+export const HOME_MENU_TREE_ERROR = 'HOME_MENU_TREE_ERROR'

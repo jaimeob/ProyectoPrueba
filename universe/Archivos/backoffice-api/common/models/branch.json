@@ -1,0 +1,81 @@
+{
+  "name": "Branch",
+  "plural": "branches",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mysql": {
+    "table": "tiendas"
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "tienda_id": {
+      "type": "string"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "tipotienda_id": {
+      "type": "string"
+    },
+    "plaza_id": {
+      "type": "string"
+    },
+    "calle": {
+      "type": "string"
+    },
+    "numext": {
+      "type": "string"
+    },
+    "numint": {
+      "type": "string"
+    },
+    "colonia": {
+      "type": "string"
+    },
+    "cp": {
+      "type": "string"
+    },
+    "referencia": {
+      "type": "string"
+    },
+    "localidad": {
+      "type": "string"
+    },
+    "municipio": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "pais": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "number"
+    },
+    "lng": {
+      "type": "number"
+    },
+    "deleted_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "branchType": {
+      "type": "belongsTo",
+      "model": "BranchType",
+      "foreignKey": "tipotienda_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

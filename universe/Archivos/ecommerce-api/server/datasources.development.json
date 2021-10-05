@@ -1,0 +1,39 @@
+{
+  "memory": {
+    "name": "memory",
+    "connector": "memory"
+  },
+  "db": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "ecommerce",
+    "password": "rootroot",
+    "name": "db",
+    "user": "root",
+    "connector": "mysql"
+  },
+  "backoffice": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "backoffice-ecommerce",
+    "password": "rootroot",
+    "name": "backoffice",
+    "user": "root",
+    "connector": "mysql"
+  },
+  "mongodb": {
+    "host": "localhost",
+    "port": 27017,
+    "url": "mongodb://admin:welcometolevel@localhost:27017/calzzapato-ecommerce?retryWrites=true&w=majority&maxPoolSize=9999999999",
+    "database": "calzzapato-ecommerce",
+    "password": "welcometolevel",
+    "maxPoolSize": 9999999999,
+    "name": "mongodb",
+    "user": "admin",
+    "useNewUrlParser": true,
+    "useUnifiedTopology": true,
+    "connector": "mongodb"
+  }
+}

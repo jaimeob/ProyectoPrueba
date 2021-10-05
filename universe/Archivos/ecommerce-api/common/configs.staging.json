@@ -1,0 +1,87 @@
+{
+  "version": "3.0.210629",
+  "HOST_WEB_APP": "https://web.calzzapato.net",
+  "HOST_WEB_APP_KELDER": "https://kelder.calzzapato.net",
+  "HOST_WEB_APP_URBANNA": "https://urbanna.calzzapato.net",
+  "HOST_WEB_APP_CALZZASPORT": "https://calzzasport.calzzapato.net",
+  "HOST_WEB_APP_CALZAKIDS": "https://calzakids.calzzapato.net",
+  "HOST": "https://api.calzzapato.net",
+  "PORT": 443,
+  "HOST_IP": "http://35.236.1.135",
+  "PORT_IP": 3000,
+  "HOST_BACKOFFICE": "http://35.236.1.135",
+  "PORT_BACKOFFICE": 3001,
+  "timeout": 999999999,
+  "HOST_TRACKING_IP": "http://35.236.1.135",
+  "PORT_TRACKING": 3003,
+  "HOST_CDN_AWS": "https://s3-us-west-1.amazonaws.com/calzzapato",
+  "webServiceVentaPublicoURL": "http://toolsweb.calzzapato.com/wsVentaPublicoPruebas/Service1.asmx",
+  "webServiceVentaPublicoApplication": "WebVentaPublico",
+  "webServiceVentaPublicoPassword": "d5259a2c2bbd66331c801f022e069579",
+  "webServiceMayoristaURL": "http://toolsweb.calzzapato.com/ws_Appmayorista/appMayoristas.asmx",
+  "webServiceMayoristaApplication": "appMayoristas",
+  "webServiceMayoristaPassword": "070F4521A1E8ADF8A22719D3CDC334BD",
+  "webServiceBluePoints": "http://cloud.calzzapato.com/ApiCoreDesarrollo",
+  "bluePointsEmail":"miguel@welcometolevel.com",
+  "bluePointsPassword":"11162318-5E4C-4B19-A5C2-EEC36617A6F4",
+  "bancomerURL": "https://prepro.adquiracloud.mx/clb/endpoint/calzapato",
+  "bancomerPrivateKey": "3Aa699b5c99a7cC1a993529bBc3ace9eb584b3E155fWabf1a11Fc879e58Da42a5",
+  "mp_account": "7399",
+  "mp_product": "1",
+  "mp_node": "0",
+  "mp_concept": "1",
+  "mp_currency": "1",
+  "mp_urlsuccess": "https://api.calzzapato.net/api/payments/success",
+  "mp_urlfailure": "https://api.calzzapato.net/api/payments/failure",
+  "jwtPrivateKey": "@c4LzZ4p4t0d1g1T4L=",
+  "shoppingProvider": 2,
+  "conektaAPIKey": "key_pDsQnMY2GrafVFBGRuNtxg",
+  "conektaAPIVersion": "2.0.0",
+  "paypalClientId": "Af1kib8pXr46QtLmsw-awkH-bk_rLVsN04mRSnhtfXS5lvjstfksj5kVg6n50iQ-cp85LKjwfnEHvmvZ",
+  "paypalClientSecret": "EE8iIS2h2ZkAOYUj4G-u1EKldRqb4DAq1WGSWEESHssE3VrKM4klK66E_5S8z7Aohf3XRYCtfKHkjeJ9",
+  "emailUser": "contacto@calzzapato.com",
+  "emailPassword": "clz@clz110",
+  "netpay": {
+    "username": "app@calzzapato.com",
+    "password": "12345678",
+    "storeIdAcq": "550391",
+    "login": "https://ecommerce.netpay.com.mx/gateway-ecommerce/v1/auth/login",
+    "createAPIKey": "https://ecommerce.netpay.com.mx/gateway-ecommerce/v1/store/store-api-key",
+    "cardTokenization": "https://ecommerce.netpay.com.mx/gateway-ecommerce/v1/token-card",
+    "riskManager": "https://ecommerce.netpay.com.mx/gateway-ecommerce/v1/risk-manager/token-card",
+    "checkStatus": "https://ecommerce.netpay.com.mx/gateway-ecommerce/v1/transaction-report/transaction",
+    "chargeAuth": "https://ecommerce.netpay.com.mx/gateway-ecommerce/v1/transaction/charge"
+  },
+  "mercadopago": {
+    "publicKey": "APP_USR-fb7320ab-587f-4257-9fb2-466ef6ee5e6a",
+    "accessToken": "APP_USR-7188646485947683-120800-361140a104930a3cb0c0160c59c9019f-684236177",
+    "backUrl": "https://api.calzzapato.net/api/payments/mercadopago/paid"
+  },
+  "envia": {
+    "url": "https://api-test.envia.com/",
+    "queryUrl": "http://queries.envia.com/",
+    "token": "c2f61d0b04799113b45a42a5e3fc5bc913627ab73c99e76810d3e551877cf6eb",
+    "geocode": "https://geocodes.envia.com/locate/MX/",
+    "geocodeToken": "229bd23d8036d20dd9fbe38b8c148936"
+  },
+  "openpay": {
+    "privateKey": "sk_4b471592c1a44dec812b1c3e5dcd46c6",
+    "publicKey": "pk_53f39239b0664156b0f89bce06012876",
+    "id": "m7gqb3y8lyylfomlquqs",
+    "urlTicket":"https://sandbox-dashboard.openpay.mx/paynet-pdf/"
+  },
+  "aws": {
+    "bucket": "calzzapatolevel",
+    "accessKeyId": "AKIAU3OVKABDBCAPLODD",
+    "secretAccessKey": "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"
+  },
+  "documents": {
+    "CREDIVALE_INE_FRONT": 1,
+    "CREDIVALE_INE_BACK": 2,
+    "CREDIVALE_ADDRESS_PROOF": 3,
+    "PRODUCT_PHOTO_REVIEW": 4,
+    "INE_EVIDENCE": 5,
+    "SIGN_EVIDENCE": 6
+  }
+  
+}

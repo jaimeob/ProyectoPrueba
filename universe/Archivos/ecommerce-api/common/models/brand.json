@@ -1,0 +1,34 @@
+{
+  "name": "Brand",
+  "plural": "brands",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "object"
+    },
+    "code": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "products": {
+      "type": "hasMany",
+      "model": "Product",
+      "foreignKey": "brandCode",
+      "primaryKey": "code"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

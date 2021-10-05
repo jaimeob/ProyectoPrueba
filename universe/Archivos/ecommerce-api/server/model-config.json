@@ -1,0 +1,247 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "memory",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "memory",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "memory",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "memory",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "memory",
+    "public": false
+  },
+  "Instance": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Status": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Config": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Home": {
+    "dataSource": "db",
+    "public": true
+  },
+  "DocumentType": {
+    "dataSource": "db",
+    "public": true
+  },
+  "CDN": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Comment": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Cart": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Product": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "ProductDetail": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Tag": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Brand": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Menu": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Business": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Zone": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Store": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Gender": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Color": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Subline": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Block": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Category": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "UserModel": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Address": {
+    "dataSource": "db",
+    "public": true
+  },
+  "State": {
+    "dataSource": "db",
+    "public": true
+  },
+  "City": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Municipality": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Location": {
+    "dataSource": "db",
+    "public": true
+  },
+  "LocationType": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Order": {
+    "dataSource": "db",
+    "public": true
+  },
+  "OrderDetail": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Payment": {
+    "dataSource": "db",
+    "public": true
+  },
+  "ShippingAddress": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Attribute": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Page": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "FAQ": {
+    "dataSource": "db",
+    "public": true
+  },
+  "FAQType": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Subscriber": {
+    "dataSource": "db",
+    "public": true
+  },
+  "ShippingMethod": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Pipeline": {
+    "dataSource": "db",
+    "public": true
+  },
+  "PaymentMethod": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Catalog": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "CrediVale": {
+    "dataSource": null,
+    "public": true
+  },
+  "Coupon": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Card": {
+    "dataSource": "db",
+    "public": true
+  },
+  "C": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "Landing": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Chatbot": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "RecentlySeen": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "RecomendationProduct": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "CalzzamovilEvidence": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Sync": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "OrderLog": {
+    "dataSource": "mongodb",
+    "public": true
+  }
+}

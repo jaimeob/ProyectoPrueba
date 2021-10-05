@@ -1,0 +1,64 @@
+{
+  "name": "Instance",
+  "plural": "instances",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "uuid": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "android": {
+      "type": "number"
+    },
+    "ios": {
+      "type": "number"
+    },
+    "androidVersionCode": {
+      "type": "number"
+    },
+    "iosVersionCode": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "alias": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "updatedAt": {
+      "type": "date"
+    },
+    "status": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "validations": [],
+  "relations": {
+    "configs": {
+      "type": "hasOne",
+      "model": "Config",
+      "foreignKey": "instanceId",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

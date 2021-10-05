@@ -1,0 +1,51 @@
+{
+  "name": "OrderLog",
+  "plural": "order-logs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "userId": {
+      "type": "number",
+      "required": true
+    },
+    "orderId": {
+      "type": "number"
+    },
+    "carrito": {
+      "type": "string",
+      "default": "null"
+    },
+    "actions": {
+      "type": [
+        "object"
+      ],
+      "required": true
+    },
+    "intentos": {
+      "type": "number",
+      "default": 0
+    },
+    "product": {
+      "type": "string"
+    },
+    "size": {
+      "type": "number"
+    },
+    "quantity": {
+      "type": "number",
+      "required": true,
+      "default": 1
+    },
+    "status": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

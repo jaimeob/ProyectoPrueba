@@ -1,0 +1,52 @@
+{
+  "name": "Block",
+  "plural": "blocks",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "object"
+    },
+    "instanceId": {
+      "type": "number"
+    },
+    "blockTypeId": {
+      "type": "number"
+    },
+    "title": {
+      "type": "string"
+    },
+    "identifier": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "position": {
+      "type": "number"
+    },
+    "order": {
+      "type": "string"
+    },
+    "configs": {
+      "type": "object"
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "updatedAt": {
+      "type": "date"
+    },
+    "status": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

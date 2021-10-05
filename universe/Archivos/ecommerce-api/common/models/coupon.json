@@ -1,0 +1,37 @@
+{
+  "name": "Coupon",
+  "plural": "coupons",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "percentageDiscount": {
+      "type": "number"
+    },
+    "priceDiscount": {
+      "type": "number"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "status": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

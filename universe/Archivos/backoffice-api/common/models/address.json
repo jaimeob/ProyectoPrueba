@@ -1,0 +1,72 @@
+{
+  "name": "Address",
+  "plural": "addresses",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "instanceId": {
+      "type": "number"
+    },
+    "zip": {
+      "type": "string"
+    },
+    "stateCode": {
+      "type": "string"
+    },
+    "municipalityCode": {
+      "type": "string"
+    },
+    "locationCode": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "exteriorNumber": {
+      "type": "string"
+    },
+    "interiorNumber": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "instance": {
+      "type": "belongsTo",
+      "model": "Instance",
+      "foreignKey": "instanceId"
+    },
+    "state": {
+      "type": "belongsTo",
+      "model": "State",
+      "foreignKey": "stateCode",
+      "primaryKey": "code"
+    },
+    "municipality": {
+      "type": "belongsTo",
+      "model": "Municipality",
+      "foreignKey": "municipalityCode",
+      "primaryKey": "code"
+    },
+    "location": {
+      "type": "belongsTo",
+      "model": "Location",
+      "foreignKey": "locationCode",
+      "primaryKey": "code"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

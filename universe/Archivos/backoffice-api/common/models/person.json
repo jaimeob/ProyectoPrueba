@@ -1,0 +1,48 @@
+{
+  "name": "Person",
+  "plural": "persons",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "businessId": {
+      "type": "string",
+      "required": true
+    },
+    "gender": {
+      "type": "string",
+      "required": true,
+      "default": "both"
+    },
+    "age": {
+      "type": "string",
+      "required": true
+    },
+    "prices": {
+      "type": [
+        "object"
+      ]
+    },
+    "categories": {
+      "type": [
+        "object"
+      ]
+    },
+    "brands": {
+      "type": [
+        "object"
+      ]
+    },
+    "attributes": {
+      "type": [
+        "object"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

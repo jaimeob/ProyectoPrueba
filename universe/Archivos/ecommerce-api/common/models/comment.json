@@ -1,0 +1,42 @@
+{
+  "name": "Comment",
+  "plural": "comments",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "instanceId": {
+      "type": "number"
+    },
+    "userId": {
+      "type": "number"
+    },
+    "productCode": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "title": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "photos": {
+      "type": "array"
+    },
+    "status": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

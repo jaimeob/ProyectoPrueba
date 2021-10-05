@@ -1,0 +1,78 @@
+{
+  "name": "Giveaway",
+  "plural": "giveaways",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "giveaway": {
+      "type": "string"
+    },
+    "name": {
+      "type": "String"
+    },
+    "startDate": {
+      "type": "Date"
+    },
+    "finishDate": {
+      "type": "Date"
+    },
+    "description": {
+      "type": "String"
+    },
+    "cover": {
+      "type": "Object"
+    },
+    "requiredLogin": {
+      "type": "Boolean"
+    },
+    "createdBy": {
+      "type": "String"
+    },
+    "createdAt": {
+      "type": "Date"
+    },
+    "status": {
+      "type": "Number"
+    },
+    "countDownStart": {
+      "type": "Boolean"
+    },
+    "countDownEnd": {
+      "type": "Boolean"
+    },
+    "requiredTicket": {
+      "type": "Boolean"
+    },
+    "winner": {
+      "type": "Array"
+    },
+    "maxTicket": {
+      "type": "Number"
+    },
+    "path": {
+      "type": "String"
+    },
+    "instances": {
+      "type": "Array"
+    },
+    "minimumAmount": {
+      "type": "Number"
+    },
+    "minimumRequired": {
+      "type": "Boolean"
+    },
+    "totalWinners": {
+      "type": "Number"
+    },
+    "termsOfService": {
+      "type": "String"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

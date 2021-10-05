@@ -1,0 +1,24 @@
+{
+  "name": "CalzzamovilEvidence",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "calzzamovilId": {
+      "type": "number",
+      "required": true
+    },
+    "ine": {
+      "type": "object"
+    },
+    "sign": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

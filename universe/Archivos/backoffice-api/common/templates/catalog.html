@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+        * {
+          font-family: 'Roboto', sans-serif;
+          }
+        html {
+          font-family: CircularStd, Arial;
+          background-color: #FAFAFA;
+        }
+        body {
+          width: 100%;
+          margin: 0 auto;
+          padding: 0px;
+        }
+        p {
+          padding: 0px;
+          margin: 0px;
+        }
+        .headband {
+          width: 100%;
+          height: 40px;
+          padding-left: 8px;
+          padding-right: 8px;
+          background-color: {{primaryColor}};
+          text-align:center;
+        }
+        .navbar {
+          width: 100%;
+          padding: 8px 0px 8px;
+          display: block;
+          background-color: {{navbarBackgroundColor}};
+        }
+        .footer {
+          width: 100%;
+          height: 100%;
+          background-color: {{footerBackgroundColor}};
+        }
+        .footer-container {
+          padding: 12px 24px;
+        }
+        .logo {
+          width: {{sizeNavbarLogo}};
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0px 8px 0px 8px;
+        }
+        .title {
+          font-size: 18px;
+          color: #FFF;
+          float:left;
+          display: block;
+          font-weight: 'bold';
+        }
+        .social-network {
+          display: inline-block;
+          font-size: 12px;
+          color: #FFF;
+        }
+        .icon {
+          width: 24px;
+          height: 24px;
+          vertical-align: middle;
+          margin-right: 4;
+          object-fit: contain;
+        }
+        .social-network-container{
+          margin-right: 16px;
+          margin-top: 8px;
+          float: right;
+          text-align: center;
+        }
+        .product-container {
+          display: inline-block;
+          width: 100%;
+          padding: 0px 32px 32px 32px;
+        }
+        .product-preview {
+          display: inline-block;
+          width: 10%;
+          vertical-align: top;
+        }
+        .image-preview {
+          width: 100%;
+          display:inline-block;
+          margin:auto;
+        }
+        .central-container {
+          display: inline-block;
+          width: 55%;
+          vertical-align: top;
+          padding: 0px 12px 0px 12px;
+        }
+        .image-product {
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+        }
+        .colors-products {
+          display: inline-block;
+          width: 15%;
+        }
+        .footer-text {
+          font-size: 12px;
+          color: #FFF;
+        }
+        .category-container {
+          display: block;
+        }
+        .category-name {
+          display: block;
+          color: #353B48;
+          text-align: center;
+          font-size: 18px;
+          font-weight: 'bold';
+        }
+        .product-info-container {
+          display: inline-block;
+          width: 23%;
+          height: 100%;
+          padding: 32px 24px 32px 24px;
+          background-color: #F4F4F4;
+        }
+        .text-price {
+          color: {{primaryColor}};
+        }
+        .confirm-button {
+          display: inline-block;
+          width: 80%;
+          background-color: {{primaryColor}};
+          border-radius: 6px;
+          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+          color: white;
+          cursor: pointer;
+          font-size: 14px;
+          margin-bottom: 16px;
+          padding: 10px 28px;
+          text-align: center;
+          text-decoration: none;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="pageHeader" class="pageHeader">
+      <div class="headband">
+        <h1 class="title"><strong>Nombre del catálogo: <strong>{{name}}</strong></strong></h1>
+        {{#ifCond instanceId '===' 1}}
+          <div class="social-network-container">
+            <img class="icon" src="{{iconFacebook}}">
+            <a href="https://www.facebook.com/calzzapatodigital" class="social-network">@calzzapatodigital</a>
+          </div>
+          <div class="social-network-container">
+            <img class="icon" src="{{iconInstagram}}">
+            <a href="https://www.instagram.com/calzzapatodigital" class="social-network">@calzzapatodigital</a>
+          </div>
+        {{/ifCond}}
+        {{#ifCond instanceId '===' 2}}
+          <div class="social-network-container">
+            <img class="icon" src="{{iconFacebook}}">
+            <a href="https://www.facebook.com/kelder.mx" class="social-network">@Kelder.mx</a>
+          </div>
+          <div class="social-network-container">
+            <img class="icon" src="{{iconInstagram}}">
+            <a href="https://www.instagram.com/kelder.mx" class="social-network">@kelder.mx</a>
+          </div>
+        {{/ifCond}}
+        {{#ifCond instanceId '===' 3}}
+          <div class="social-network-container">
+            <img class="icon" src="{{iconFacebook}}">
+            <a href="https://www.facebook.com/UBNurbanna" class="social-network">@UBNurbanna</a>
+          </div>
+          <div class="social-network-container">
+            <img class="icon" src="{{iconInstagram}}">
+            <a href="https://www.instagram.com/urbanna_mx/" class="social-network">@urbanna_mx</a>
+          </div>
+        {{/ifCond}}
+      </div>
+      <div class="navbar">
+        <img src="{{logo}}" class="logo"> 
+      </div>
+    </div>
+    
+    {{#each categories}}
+    <div class="category-container">
+      {{#each products}}
+        <div class="product-container">
+          <div class="product-preview">
+            {{#each (limit photos 5)}}
+              <img src={{this}} class="image-preview" />
+            {{/each}}
+          </div>
+          <div class="central-container">
+            <img src={{mainPhoto}} class="image-product" />
+            <div class="image-product">
+              {{#each colors}}
+                <a href={{../../../domain}}{{url}} style="color: white;">
+                  <img src={{photo}} class="colors-products" />
+                </a>
+              {{/each}}
+            </div>
+          </div>
+          <div class="product-info-container">
+            <p style="font-size: 24px; color: #353B48; text-align: center;">{{brand.name}}</p>
+            <p style="font-size: 14px; color: gray; text-align: center; margin-bottom: 16px;">{{name}}</p>
+            <p style="font-size: 14px; color: #353B48; text-align: center;"><strong>{{code}}</strong></p>
+            <p style="font-size: 14px; color: #353B48; text-align: center; margin-bottom: 16px;">Código</p>
+            <p class="text-price" style="font-size: 28px; text-align: center;"><strong>${{price}}</strong></p>
+            <p style="font-size: 14px; color: #353B48; text-align: center; margin-bottom: 16px;">Precio al contado</p>
+            <div style="display: inline-block; width: 100%; margin-bottom: 24px;"> 
+              <img width: 25%; float: left;">
+              <div width: 75%; float: right;">
+                <p style="font-size: 14px; color: #353B48; text-align: center;">Desde <span style="color: red;"><strong>${{partialityPrice}}</strong></span> quincenales con tu crédito CrediVale®</p>
+              </div>
+            </div>
+            <p style="font-size: 14px; color: #353B48; text-align: center; margin-bottom: 24px;">(Paga <span style="color: red;"><strong>${{creditPrice}}</strong></span> en {{partiality}} quincenas)</p>
+            <a href={{../../domain}}{{url}} class="confirm-button"><span style="color: white;"><strong>COMPRAR</strong></span></a>
+            <p style="font-size: 12px; color:#353B48; text-align: center;">Paga a crédito con CrediVale ®</p>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    {{/each}}
+    
+    <div id="pageFooter">
+      <div class="footer">
+        <div class="footer-container">
+          <p class="footer-text">Catálogo generado y compartido por: <strong>{{fullName}}</strong></p>
+          <p class="footer-text">Correo de contacto: <strong>{{email}}</strong></p>
+          <p class="footer-text">Teléfono de contacto: <strong>{{cellphone}}</strong></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+

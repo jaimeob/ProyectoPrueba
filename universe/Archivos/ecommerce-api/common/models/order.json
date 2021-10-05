@@ -1,0 +1,91 @@
+{
+  "name": "Order",
+  "plural": "orders",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "order": {
+      "type": "string"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "number"
+    },
+    "shippingMethodId": {
+      "type": "number"
+    },
+    "shippingAddressId": {
+      "type": "number"
+    },
+    "discount": {
+      "type": "number"
+    },
+    "shippingCost": {
+      "type": "number"
+    },
+    "subtotal": {
+      "type": "number"
+    },
+    "total": {
+      "type": "number"
+    },
+    "paymentMethodId": {
+      "type": "number"
+    },
+    "couponId": {
+      "type": "number"
+    },
+    "shoppingDate": {
+      "type": "date"
+    },
+    "pipeline": {
+      "type": "number"
+    },
+    "createdAt": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "OrderDetail": {
+      "type": "hasMany",
+      "model": "OrderDetail",
+      "foreignKey": "orderId",
+      "primaryKey": "id"
+    },
+    "ShippingMethod": {
+      "type": "hasOne",
+      "model": "ShippingMethod",
+      "foreignKey": "id",
+      "primaryKey": "shippingMethodId"
+    },
+    "ShippingAddress": {
+      "type": "hasOne",
+      "model": "ShippingAddress",
+      "foreignKey": "id",
+      "primaryKey": "shippingAddressId"
+    },
+    "PaymentMethod": {
+      "type": "hasOne",
+      "model": "PaymentMethod",
+      "foreignKey": "id",
+      "primaryKey": "paymentMethodId"
+    },
+    "Pipeline": {
+      "type": "hasOne",
+      "model": "Pipeline",
+      "foreignKey": "id",
+      "primaryKey": "pipeline"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Sync",
+  "plural": "syncs",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "object"
+    },
+    "collection": {
+      "type": "string"
+    },
+    "items": {
+      "type": "number"
+    },
+    "time": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,235 @@
+{
+  "Benefits": {
+    "items": [
+      {
+        "banner" : "https://imgur.com/C1hzvzq.jpeg",
+        "title" : "Productos originales.",
+        "description" : "Encuentra una exclusiva variedad de productos 100% originales."
+      }, 
+      {
+          "banner" : "https://imgur.com/qf5sUFH.jpeg",
+          "title" : "Envíos gratis.",
+          "description" : "Enviamos a toda la república mexicana de manera rápida y segura. A partir de $999."
+      }, 
+      {
+          "banner" : "https://imgur.com/mtzYUBX.jpeg",
+          "title" : "Garantía y soporte.",
+          "description" : "Nuestro objetivo es que tengas una experiencia increíble."
+      }, 
+      {
+          "banner" : "https://imgur.com/ZDLRqrO.jpeg",
+          "title" : "Fácil y seguro.",
+          "description" : "Contamos con métodos de pago y tecnología que garantizan tu compra."
+      }
+    ]
+  },
+  "About": {
+    "title": "Grupo Calzzapato ®",
+    "subtitle": "Conoce más acerca de nosotros.",
+    "images": {
+      "main": "https://i.imgur.com/rrPoXiM.jpg",
+      "responsive": "https://i.imgur.com/rrPoXiM.jpg"
+    },
+    "description": "Somos Calzzapato, una empresa comprometida con nuestros clientes, proveedores y colaboradores.",
+    "blocks": [
+      {
+        "title": "Misión",
+        "description": "Influir e impactar positivamente en la vida de nuestros consumidores con puntos de venta, productos y servicios que lleguen hasta el último rincón de nuestra región."
+      },
+      {
+        "title": "Visión",
+        "description": "Ser el grupo líder regional con mayor variedad de productos, y que estos nos conduzca a un crecimiento a nivel nacional, a través de una infrestructura moderna, venta en línea y plataformas digitales al servicio de nuestros consumidores."
+      },
+      {
+        "title": "Valores",
+        "description": "Pasión por los resultados, innovación, trabajo en equipo, comunicación funcional y oportuna, lealtad y honestidad."
+      }
+    ]
+  },
+  "Footer": {
+    "explore": {
+      "title": "Explora Calzzapato ®",
+      "options": [
+        {
+          "image": "",
+          "title": "Mujeres",
+          "subtitle": "",
+          "cta": "/mujeres"
+        },
+        {
+          "image": "",
+          "title": "Hombres",
+          "subtitle": "",
+          "cta": "/hombres"
+        },
+        {
+          "image": "",
+          "title": "Niñas",
+          "subtitle": "",
+          "cta": "/ninas"
+        },
+        {
+          "image": "",
+          "title": "Niños",
+          "subtitle": "",
+          "cta": "/ninos"
+        },
+        {
+          "image": "",
+          "title": "Marcas",
+          "subtitle": "",
+          "cta": "/marcas"
+        },
+        {
+          "image": "",
+          "title": "Todos",
+          "subtitle": "",
+          "cta": "/todos"
+        },
+        {
+          "image": "",
+          "title": "Ofertas",
+          "subtitle": "",
+          "cta": "/todos?csa=eyJwZyI6MCwibCI6NTAsInUiOm51bGwsImMiOm51bGwsImJjIjpudWxsLCJiciI6W10sInNjIjpbXSwiYiI6W10sImEiOltdLCJzIjpbXSwicCI6W10sImciOltdLCJvIjp0cnVlLCJvYiI6IiJ9"
+        },
+        {
+          "image": "",
+          "title": "Puntos azules",
+          "subtitle": "",
+          "cta": "/todos?csa=eyJwZyI6MCwibCI6NTAsInUiOm51bGwsImMiOm51bGwsImJjIjpudWxsLCJiciI6W10sInNjIjpbXSwiYiI6W10sImEiOltdLCJzIjpbXSwicCI6W10sImciOltdLCJvIjpmYWxzZSwiYnAiOnRydWUsIm9iIjoiIn0="
+        }
+      ]
+    },
+    "support": {
+      "title": "Servicio al cliente.",
+      "options": [
+        {
+          "image": "",
+          "title": "800 927 2867",
+          "subtitle": "Atención 24/7",
+          "cta": "tel://8009272867"
+        },
+        {
+          "image": "",
+          "title": "app@calzzapato.com",
+          "subtitle": "Correo electrónico",
+          "cta": "mailto://app@calzzapato.com"
+        },
+        {
+          "image": "",
+          "title": "Soporte",
+          "subtitle": "",
+          "cta": "/soporte"
+        },
+        {
+          "image": "",
+          "title": "Preguntas frecuentes",
+          "subtitle": "",
+          "cta": "/preguntas"
+        },
+        {
+          "image": "",
+          "title": "Validar CrediVale ®",
+          "subtitle": "",
+          "cta": "/validar-credivale"
+        },
+        {
+          "image": "",
+          "title": "Ubica tu tienda",
+          "subtitle": "",
+          "cta": "/tiendas"
+        }
+      ]
+    },
+    "download": {
+      "title": "Descarga nuestra app",
+      "options": [
+        {
+          "image": "https://calzzapatolevel.s3.us-east-2.amazonaws.com/icons/downloadApple.svg",
+          "title": "",
+          "subtitle": "",
+          "cta": "https://bit.ly/calzzapatoapple"
+        },
+        {
+          "image": "https://calzzapatolevel.s3.us-east-2.amazonaws.com/icons/downloadAndroid.svg",
+          "title": "",
+          "subtitle": "",
+          "cta": "https://bit.ly/calzzapatogoogleplay"
+        }
+      ]
+    },
+    "about": {
+      "title": "Acerca de",
+      "options": [
+        {
+          "image": "",
+          "title": "Nuestra historia",
+          "subtitle": "",
+          "cta": "/nosotros"
+        },
+        {
+          "image": "",
+          "title": "Políticas de privacidad",
+          "subtitle": "",
+          "cta": "/privacidad"
+        },
+        {
+          "image": "",
+          "title": "Términos y condiciones",
+          "subtitle": "",
+          "cta": "/terminos"
+        },
+        {
+          "image": "",
+          "title": "Proveedores",
+          "subtitle": "",
+          "cta": "http://187.141.134.126/calnet/"
+        },
+        {
+          "image": "",
+          "title": "Solicitar crédito",
+          "subtitle": "",
+          "cta": "/solicitud-credivale"
+        },
+        {
+          "image": "",
+          "title": "Monedero Azul ®",
+          "subtitle": "",
+          "cta": "https://www.monederoazul.com"
+        }
+      ]
+    },
+    "social": {
+      "title": "Conecta con nosotros",
+      "options": [
+        {
+          "image": "https://calzzapatolevel.s3.us-east-2.amazonaws.com/icons/instagram.svg",
+          "title": "",
+          "subtitle": "",
+          "cta": "https://bit.ly/calzzapatoinsta"
+        },
+        {
+          "image": "https://calzzapatolevel.s3.us-east-2.amazonaws.com/icons/facebook.svg",
+          "title": "",
+          "subtitle": "",
+          "cta": "https://bit.ly/calzzapatofb"
+        },
+        {
+          "image": "https://calzzapatolevel.s3.us-east-2.amazonaws.com/icons/whatsapp.svg",
+          "title": "",
+          "subtitle": "",
+          "cta": "https://api.whatsapp.com/send?phone=526677515229&text=Hola,%20me%20gustaria%20hablar%20con%20un%20asesor%20de%20Calzzapato"
+        },
+        {
+          "image": "https://calzzapatolevel.s3.us-east-2.amazonaws.com/icons/youtube.svg",
+          "title": "",
+          "subtitle": "",
+          "cta": "http://bit.ly/calzzapatoyoutube"
+        }
+      ]
+    },
+    "copyright": "Todos los derechos reservados.",
+    "terms": "Términos y condiciones",
+    "privacy": "Políticas de privacidad"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "RecentlySeen",
+  "plural": "recently-seen",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "userId": {
+      "type": "number",
+      "required": true
+    },
+    "instanceId": {
+      "type": "number",
+      "required": true
+    },
+    "products": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

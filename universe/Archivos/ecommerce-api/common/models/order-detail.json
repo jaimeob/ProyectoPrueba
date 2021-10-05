@@ -1,0 +1,63 @@
+{
+  "name": "OrderDetail",
+  "plural": "orders-detail",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "orderId": {
+      "type": "number"
+    },
+    "productCode": {
+      "type": "string"
+    },
+    "productArticleCode": {
+      "type": "string"
+    },
+    "productDescription": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "number"
+    },
+    "localDelivery": {
+      "type": "number"
+    },
+    "size": {
+      "type": "string"
+    },
+    "unitPrice": {
+      "type": "number"
+    },
+    "saved": {
+      "type": "number"
+    },
+    "subtotal": {
+      "type": "number"
+    },
+    "pointsCode": {
+      "type": "string"
+    },
+    "pointsExchange": {
+      "type": "number"
+    },
+    "pointsWin": {
+      "type": "number"
+    },
+    "pointsWinPercentage": {
+      "type": "number"
+    },
+    "status": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

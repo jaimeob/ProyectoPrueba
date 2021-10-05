@@ -1,0 +1,52 @@
+{
+  "name": "CDN",
+  "plural": "cdn",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "object"
+    },
+    "instanceId": {
+      "type": "number"
+    },
+    "documentTypeId": {
+      "type": "number"
+    },
+    "fileName": {
+      "type": "string"
+    },
+    "fileType": {
+      "type": "string"
+    },
+    "fileSize": {
+      "type": "number"
+    },
+    "width": {
+      "type": "number"
+    },
+    "height": {
+      "type": "number"
+    },
+    "url": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "updatedAt": {
+      "type": "date"
+    },
+    "status": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

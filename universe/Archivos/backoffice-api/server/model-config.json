@@ -1,0 +1,232 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "memory",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "memory",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "memory",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "memory",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "memory",
+    "public": false
+  },
+  "Instance": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Status": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Config": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Home": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "DocumentType": {
+    "dataSource": "db",
+    "public": true
+  },
+  "CDN": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Block": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "ProductCategory": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "CategoryNode": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "UserModel": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Address": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "State": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "City": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "Municipality": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "Location": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "LocationType": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "Order": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "OrderDetail": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "Payment": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "ShippingAddress": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "ProductAttribute": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "Attribute": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "ProductStock": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "FAQ": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "FAQType": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "Info": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "ShippingMethod": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "Pipeline": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "PaymentMethod": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "Catalog": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "CatalogDetail": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "CategoryInfo": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "ActionType": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "Metadata": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "Log": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "Landing": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "PopUp": {
+    "dataSource": "ecommerce",
+    "public": true
+  },
+  "Page": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Cart": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Product": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Gender": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Brand": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "ProductDetail": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Folio": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Person": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Giveaway": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "participants": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "mailing": {
+    "dataSource": "mongodb",
+    "public": true
+  }
+   
+}

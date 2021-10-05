@@ -1,0 +1,30 @@
+{
+  "name": "Organization",
+  "plural": "organizations",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mysql": {
+    "table": "entidades"
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "string"
+    },
+    "plaza_id": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

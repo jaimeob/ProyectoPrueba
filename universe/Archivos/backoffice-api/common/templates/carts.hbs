@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    * {
+      background: #707070,
+      font-family: 'Roboto', sans-serif;
+    }
+
+    html {
+      font-family: CircularStd, Arial;
+      background-color: #FAFAFA;
+    }
+
+    h4 {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0px;
+    }
+
+    table, tr, td {
+      border: 1px solid gray;
+    }
+
+    .card {
+      background: white;
+      padding: 8px;
+      margin: 8px;
+      font-size: 10px;
+    }
+  </style>
+</head>
+<body>
+  {{#each carts}}
+  <div class="card">
+    <div>
+      <div>
+        <strong>Cliente:</strong> <span>{{user.name}}</span>
+      </div>
+      <div>
+        <strong>Correo:</strong> <span>{{user.email}}</span>
+      </div>
+      <div>
+        <strong>Celular:</strong> <span>{{user.cellphone}}</span>
+      </div>
+      <div>
+        <strong>Compras anteriores:</strong> <span>{{shoppings}}</span>
+      </div>
+    </div>
+    <div style="margin-top: 8px;">
+      <div>
+        <strong>Productos en el carrito:</strong> <span>{{totalProducts}}</span>
+      </div>
+      <div>
+        <strong>Estatus del carrito:</strong> <span>{{status}}</span>
+      </div>
+      <div>
+        <strong>Creación del carrito:</strong> <span>{{createDays}}</span>
+      </div>
+      <div>
+        <strong>Última actualización:</strong> <span>{{updateDays}}</span>
+      </div>
+      <div>
+        <strong>Movimientos en el carrito:</strong> <span>{{movements}}</span>
+      </div>
+      <table style="margin-top: 8px;">
+        <thead>
+          <tr>
+            <td>Código</td>
+            <td>Artículo</td>
+            <td>Marca</td>
+            <td>Talla</td>
+            <td>Cant.</td>
+            <td>Subtotal</td>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each products}}
+            <tr>
+              <td>{{code}}</td>
+              <td>{{article}}</td>
+              <td>{{brand.name}}</td>
+              <td>{{size}}</td>
+              <td>{{quantity}}</td>
+              <td>$ {{subtotal}}</td>
+              <td><a href="{{url}}">Ver</a></td>
+            </tr>
+          {{/each}}
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>{{totalProducts}}</td>
+            <td>$ {{total}}</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+  <hr />
+  {{/each}}
+</body>
+</html>

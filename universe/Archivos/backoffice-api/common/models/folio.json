@@ -1,0 +1,57 @@
+{
+  "name": "Folio",
+  "plural": "folio",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "campaignId": {
+      "type": "number",
+      "required": true
+    },
+    "agreementId": {
+      "type": "number",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "totalFolios": {
+      "type": "number",
+      "required": true
+    },
+    "import": {
+      "type": "number",
+      "required": true
+    },
+    "initDate": {
+      "type": "date",
+      "default": null
+    },
+    "finishDate": {
+      "type": "date",
+      "default": null
+    },
+    "folios": {
+      "type": [
+        "object"
+      ],
+      "required": true
+    },
+    "createdAt": {
+      "type": "date",
+      "required": true
+    },
+    "status": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

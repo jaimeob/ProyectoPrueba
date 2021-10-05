@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    margin-top: 60px;
+}
+.dashboard {
+    width: 24%;
+}
+.containerGraphs {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+}
+.contGraph{
+    width: 95%;
+    margin: 0 auto;
+}
+.contain{
+    margin-left: 3.5%;
+
+}
+.graphs50 {
+    width: 40%
+}
+.appBar{
+    position: relative;
+}
+.flex{
+    flex: 1;
+}
+.flex2{
+    display: flex;
+    align-self: center;
+    
+}
+.headTable{
+    margin: 0px;
+    padding: 0px;
+    width: 10%;
+}
+.widthRows{
+    margin: 0px;
+    padding: 0px;
+    width: 20px;
+}
+.graphs100{
+    width: 95%;
+}
+.pie{
+    width: 320px;
+    height: 360px;
+}
+.tableRow{
+    padding: 0px 0px 2px 5px !important;
+}
+.tableRowRight{
+    padding: 0px 0px 2px 5px !important;
+    text-align: right !important;
+}
+.tableRowLarge{
+    padding: 0px 4px 2px 5px !important;
+    width: 80px;
+    word-break: break-word !important;
+}
+.containWheel{
+    font-size: 25px !important;
+    margin-top: 30px;
+    width: 65%;
+}
+.containWinners{
+    width: 35%;
+}
+.containUser{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.buttonSort{
+    font-size: 20px !important;
+    margin-left: 160px !important;
+}
+.buttonOpt{
+    font-size: 14px !important;
+}
+
+.right{
+    justify-content: space-evenly !important;
+    margin-left: 850px;
+}
+.title{
+    text-align: center;
+}
+.txtUsers{
+    font-size: .85rem !important;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}

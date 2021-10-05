@@ -1,0 +1,29 @@
+.containReveal{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+.participants{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.ganador{
+    display: flex;
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 75vh;
+}
+.winnerName {
+    font-size: 50px;
+    font-weight: bold;
+}

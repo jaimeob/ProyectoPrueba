@@ -1,0 +1,39 @@
+{
+  "name": "ShippingAddress",
+  "plural": "shipping-addresses",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "userId": {
+      "type": "number"
+    },
+    "addressId": {
+      "type": "number"
+    },
+    "status": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "UserModel",
+      "foreignKey": "userId"
+    },
+    "address": {
+      "type": "belongsTo",
+      "model": "Address",
+      "foreignKey": "addressId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

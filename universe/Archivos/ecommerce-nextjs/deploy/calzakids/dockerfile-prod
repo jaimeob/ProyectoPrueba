@@ -1,0 +1,52 @@
+FROM node:12.18.3-alpine
+
+MAINTAINER Jesús Ruiz
+
+ENV VIRTUAL_HOST=calzakids.mx,www.calzakids.mx
+
+ENV LETSENCRYPT_HOST=calzakids.mx,www.calzakids.mx
+
+ENV SITEMAP_CDN=https://calzzapatodigital.s3-us-west-1.amazonaws.com/sitemaps/calzakids/sitemap.xml
+
+ENV LETSENCRYPT_EMAIL=leveltechagency@gmail.com
+
+ENV UUID=aecc4fd0-6171-4a55-a5eb-803a051574a5
+
+WORKDIR /usr/app
+
+RUN npm install --global pm2
+
+COPY ./package*.json ./
+
+RUN npm install --production
+
+COPY ./ ./
+
+RUN chmod +x ./start.sh
+
+RUN ./start.sh
+
+RUN npm run build
+
+RUN rm -rf \
+Makefile \
+docker-compose.yml \
+dockerfile-calzakids \
+dockerfile-calzzapato \
+dockerfile-calzzasport \
+dockerfile-kelder \
+dockerfile-urbanna \
+home \
+next.config.js \
+.dockerignore \
+.eslintrc.json \
+.gitignore \
+.git \
+.gitlab-ci.yml \
+src
+
+EXPOSE 3000
+
+USER node
+
+CMD [ "pm2-runtime", "start", "npm", "--", "start" ]

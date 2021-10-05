@@ -1,0 +1,104 @@
+<html>
+<head>
+  <style>
+    * {
+      font-family: 'Roboto', sans-serif;
+      outline: none !important;
+    }
+
+    .title {
+      color: #2F3640;
+    }
+
+    .calzzapato {
+      color: #2F3640;
+    }
+
+    .content {
+      color: #353B48;
+      font-size: 14px;
+    }
+
+    .confirm-button {
+      background-color: #243B7A;
+      border-radius: 6px;
+      padding: 10px 28px;
+      width: 80%;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+    }
+
+    .confirm-button:hover {
+      background-color: #1b2c5c;
+    }
+
+    .logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 20%;
+    }
+
+    .container1 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
+
+    .container2 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 992px) {
+      .container1 {
+        width: 90%;
+      }
+
+      .container2 {
+        width: 90%;
+      }
+
+      .logo {
+        width: 90%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .container1 {
+        width: 100%;
+      }
+
+      .container2 {
+        width: 100%;
+      }
+
+      .logo {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body type="text/css" style="font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
+  <div class="container1">
+    <img class="logo" src="https://i.imgur.com/Q2HaWiG.jpeg">
+    <div class="container2">
+      <h1 class="title">¡Listo, recibimos tu solicitud!</h1>
+      <p class="content">Un asesor de comunicará contigo en las próximas horas.</p>
+      <br />
+      <p class="content">Tu folio es: <strong>{{folio}}</strong></p>
+      <br />
+      <br><strong class="calzzapato">Atte. Equipo CrediVale ®</strong>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "name": "Category",
+  "plural": "categories",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "object"
+    },
+    "node": {
+      "type": "number"
+    },
+    "father": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "products": {
+      "type": "hasMany",
+      "model": "Product",
+      "foreignKey": "categoryCode",
+      "primaryKey": "node"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

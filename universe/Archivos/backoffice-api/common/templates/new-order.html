@@ -1,0 +1,176 @@
+<html>
+     <head>
+        <meta name="google" content="notranslate">
+    </head>
+        <body type="text/css" style="font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;">
+                <div style=" width: 688px; height: auto; position: relative; margin: 0 auto; " >
+                    <div style="display: flex;">
+                        <table>
+                            <tr>
+                                <td>
+                                    <img style=" width: 219px; height: 40px; left: 21px; padding: 32px 21px;" src="{{logo.url}}">
+                                </td>
+                                <td style="font-size: 16px; padding: 0px 24px;">
+                                    <p>Enviado rapido <br >y seguro</p>
+                                </td>
+                                <td style="font-size: 16px; padding: 0px 24px;">
+                                    <p>Garantía y <br >soporte</p>
+                                </td>
+                                <td style="font-size: 16px; padding: 0px 24px;">
+                                    <p>Compra fácil <br >y segura</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div style=" display:flex; background: #EBEDEE; text-decoration: none;">
+                        <table>
+                            <tr>
+                                <td style=" font-size: 16px; padding: 17px 41px;">
+                                    <a href="http://www.calzzapato.localhost:3000/bota-para-mujer/3" style="color: #1F2B4E; text-decoration: none;"> <strong>Mujeres</strong> </a> 
+                                </td>
+                                <td style=" font-size: 16px; padding: 17px 41px;">
+                                    <a href="http://www.calzzapato.localhost:3000/bota-para-hombre/45" style="color: #1F2B4E; text-decoration: none;"> <strong>Hombres</strong> </a> 
+                                </td>
+                                <td style=" font-size: 16px; padding: 17px 41px;">
+                                    <a href="http://www.calzzapato.localhost:3000/botas-para-ni%C3%B1a/111" style="color: #1F2B4E; text-decoration: none;"> <strong>Niñas</strong> </a> 
+                                </td>
+                                <td style=" font-size: 16px; padding: 17px 41px;">
+                                    <a href="http://www.calzzapato.localhost:3000/botas-para-ni%C3%B1o/85" style="color: #1F2B4E; text-decoration: none;"> <strong> Niños</strong></a> 
+                                </td>
+                                <td style=" font-size: 16px; padding: 17px 41px;">
+                                    <a href="http://www.calzzapato.localhost:3000/sandalias-para-bebe/141" style="color: #1F2B4E; text-decoration: none;"> <strong> Bebés</strong></a> 
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <h2 >Tu resumen de compra está aquí</h2>
+                        <p style="font-size: 14px;">Revisa la información y asegúrate que todo esté correcto</p>
+                        <br >
+                        <p style="font-size: 16px;"><strong>Método de pago:</strong> {{order.PaymentMethod.name}}</p>
+                        <p style="font-size: 14px;">{{order.PaymentMethod.description}}</p>
+                        <br >
+                        <hr>
+                    </div>
+                    <h2>Detalles de la orden</h2>
+                    <div style="display:flex;">
+                        <table style="line-height: 1.5;">
+                            <tr>
+                                <td style="font-size: 16px; width: 210px;">
+                                    <p><strong>Orden:</strong></p>
+                                    <p><strong>Fecha de compra:</strong></p>
+                                    <p><strong>Tipo de envío:</strong></p>
+                                    <p><strong>Fecha de entrega:</strong></p>
+                                </td>
+                                <td style="font-size: 16px; width: 210px;">
+                                    <p>{{order.order}}</p>
+                                    <p>{{order.shoppingDate}}</p>
+                                    <p>{{order.ShippingMethod.name}}</p>
+                                    <p>{{order.shoppingDate2}}</p>
+                                </td>
+                                <td style="font-size: 16px; line-height: 1;">
+                                    <p><strong>Enviado a:</strong></p>
+                                    <p>{{order.ShippingAddress.Address.street}}, {{order.ShippingAddress.Address.exteriorNumber}} {{order.ShippingAddress.interiorNumber}}</p> 
+                                    <p>{{order.ShippingAddress.Address.type}} {{order.ShippingAddress.Address.location}}</p> 
+                                    <p>#{{order.ShippingAddress.Address.zip}}</p> 
+                                    <p>{{order.ShippingAddress.Address.municipality}}, {{order.ShippingAddress.Address.state}}</p> 
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br>
+                    <br>
+                    <hr> 
+                    <h2>Artículos comprados</h2>
+                    <div style=" display:flex; width: 620px; height: 42px; margin-left: 22px; background: #EBEDEE; ">
+                        <table>
+                            <tr>
+                                <td style="font-size: 16px; padding-left: 14px; width: 900px;">
+                                    <p style="margin-top: 0px; margin-bottom: 14px;"><strong>Artículos</strong></p>
+                                </td>
+                                <td style="width: 260px; font-size: 16px;">
+                                    <p style="margin-top: 0px; margin-bottom: 14px;"><strong>Cantidad</strong></p>
+                                </td>
+                                <td style="width: 215px; font-size: 16px;">
+                                    <p style="margin-top: 8px; margin-bottom: 21px;"><strong>Precio</strong></p>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                    {{#each order.OrderDetail}}
+                    <div style=" display: flex; width: 615px; margin-left: 22px; font-size: 14px; ">
+                        <table>
+                            <tr>
+                                <td style=" width: 185px; height: 148px; "> 
+                                    <img src={{productImage}} alt={{productImage}} style="width: 185px; height: 148px;">
+                                </td>
+                                <td style="width: 150px;  padding: 10px;"> 
+                                    <p>{{productDescription}} <br></p>
+                                    <p>Talla: {{size}}</p>
+                                    <p>Código: {{productCode}}</p>
+                                </td>
+                                <td style="width: 89px; text-align: center;">
+                                    <p>{{quantity}}</p>
+                                </td>
+                                <td style="width: 117px; text-align: end; ">
+                                    <p style="text-align: end; margin-top: 1px; margin-bottom: 0px;"><strong>$ {{unitPrice}}</strong></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    {{/each}}
+                    <div style=" display: flex; width: 450px; margin-left: 150px;">
+                        <table style="padding: 0px 60px;">
+                            <tr>
+                                <td style="font-size: 16px; line-height: 3;">
+                                    <p>Subtotal:</p>
+                                    <p>Descuento:</p>
+                                    <p>Envío:</p>
+                                    <p><strong>Total:</strong></p>
+                                </td>
+                                <td style="font-size: 16px; padding: 0px 41px; line-height: 3;">
+                                    <p>$ {{order.subtotal}} M.N.</p>
+                                    <p>$ {{order.discount}} M.N.</p>
+                                    <p>$ {{order.shippingCost}} M.N.</p>
+                                    <p><strong>$ {{order.total}} M.N.</strong></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div style="width: 688px; height: 300px; display: flex; position: relative; background: #1F2B4E;">
+                        <table>
+                            <tr>
+                                <td style="font-size: 14px; padding: 20px 23px;" >
+                                    <ul style="list-style:none; text-decoration: none; color: ivory; line-height: 1.6;">
+                                        <h2 style="color: ivory; padding-bottom: 2px; padding-top: 6px;">Infórmate</h2>
+                                        <a href="http://www.calzzapato.localhost:3000/preguntas" style=" list-style:none; text-decoration: none; color: ivory;">Preguntas frecuentes</a>
+                                        <br >
+                                        <br >
+                                        <a href="http://www.calzzapato.localhost:3000/privacidad" style=" list-style:none; text-decoration: none; color: ivory;">Políticas de privacidad</a>
+                                        <br >
+                                        <br >
+                                        <a href="http://www.calzzapato.localhost:3000/terminos" style=" list-style:none; text-decoration: none; color: ivory;">Términos y condiciones</a>
+                                    </ul>
+                                </td>
+                                <td style="font-size: 14px; padding: 20px 23px;">
+                                    <ul style="list-style:none; text-decoration: none; color: ivory;">
+                                        <h2 style="color: ivory; padding-bottom: 11px; padding-top: 13px;">Comunícate</h2>                                
+                                        <p style="color: ivory; font-size: 14px;">01 800 927 2867</p>
+                                        <a style=" list-style:none; text-decoration: none; font-size: 14px; color: ivory;" >contacto@calzzapato.com</a><br> <br>
+                                        <a href="http://bit.ly/calzzapatoinstagram" target="_blank"><img style=" width: 34px; height: 34px;" src={{instagram}}></img></a>
+                                        <a  href="http://bit.ly/calzzapatofacebook" target="_blank"><img style=" list-style:none; text-decoration: none; width: 34px; height: 34px;" src={{facebook}}></img></a>
+                                        <a  href="https://wa.link/u4ar4c" target="_blank"><img style=" list-style:none; text-decoration: none; width: 34px; height: 34px;" src={{whatsapp}}></img></a>
+                                        <a  href="http://bit.ly/calzzapatoyoutube" target="_blank"><img style=" list-style:none; text-decoration: none; width: 34px; height: 34px;" src={{youtube}}></img></a>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div>
+                </body>    
+</html>
+
+
+

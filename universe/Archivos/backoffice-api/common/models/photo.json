@@ -1,0 +1,69 @@
+{
+  "name": "Photo",
+  "plural": "photos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mysql": {
+    "table": "fotografias"
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "lote": {
+      "type": "string"
+    },
+    "angulo": {
+      "type": "number"
+    },
+    "ruta_completa": {
+      "type": "string"
+    },
+    "nombre_fotografia": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "actualizado": {
+      "type": "boolean"
+    },
+    "sincronizado": {
+      "type": "boolean"
+    },
+    "marca_color_id": {
+      "type": "number"
+    },
+    "desc_lote": {
+      "type": "string"
+    },
+    "marca_id": {
+      "type": "number"
+    },
+    "modelo": {
+      "type": "string"
+    },
+    "principal": {
+      "type": "boolean"
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "producto": {
+      "type": "belongsTo",
+      "model": "Product",
+      "foreignKey": "lote"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

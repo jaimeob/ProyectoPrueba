@@ -1,0 +1,39 @@
+{
+  "memory": {
+    "name": "memory",
+    "connector": "memory"
+  },
+  "db": {
+    "host": "10.168.0.3",
+    "port": 3306,
+    "url": "",
+    "database": "ecommerce",
+    "password": "cLz@l3V3l.",
+    "name": "db",
+    "user": "root",
+    "connector": "mysql"
+  },
+  "backoffice": {
+    "host": "10.168.0.3",
+    "port": 3306,
+    "url": "",
+    "database": "backoffice-ecommerce",
+    "password": "cLz@l3V3l.",
+    "name": "db",
+    "user": "root",
+    "connector": "mysql"
+  },
+  "mongodb": {
+    "host": "10.168.0.3",
+    "port": 27017,
+    "url": "mongodb://level:cLzl3V3l@10.168.0.3:27017/ecommerce?retryWrites=true&w=majority&maxPoolSize=9999999999",
+    "database": "ecommerce",
+    "password": "cLzl3V3l",
+    "maxPoolSize": 9999999999,
+    "name": "mongodb",
+    "user": "level",
+    "useNewUrlParser": true,
+    "useUnifiedTopology": true,
+    "connector": "mongodb"
+  }
+}

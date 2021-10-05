@@ -1,0 +1,39 @@
+{
+  "name": "Category",
+  "plural": "categories",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mysql": {
+    "table": "categorias"
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "nombre_fotografia": {
+      "type": "string"
+    },
+    "ruta_fotografia": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

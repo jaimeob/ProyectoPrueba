@@ -1,0 +1,72 @@
+{
+  "name": "Store",
+  "plural": "stores",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "object"
+    },
+    "storeCode": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "storeType": {
+      "type": "string"
+    },
+    "zoneCode": {
+      "type": "string"
+    },
+    "zone": {
+      "type": "object"
+    },
+    "street": {
+      "type": "string"
+    },
+    "exteriorNumber": {
+      "type": "string"
+    },
+    "interiorNumber": {
+      "type": "string"
+    },
+    "suburb": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "string"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "municipality": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "number"
+    },
+    "lng": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

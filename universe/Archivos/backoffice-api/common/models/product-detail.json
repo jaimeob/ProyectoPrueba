@@ -1,0 +1,34 @@
+{
+  "name": "ProductDetail",
+  "plural": "products-detail",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "object"
+    },
+    "code": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "product": {
+      "type": "hasOne",
+      "model": "Product",
+      "foreignKey": "code",
+      "primaryKey": "code"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

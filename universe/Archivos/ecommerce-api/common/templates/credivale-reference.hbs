@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style type="text/css" media="all" rel="stylesheet">
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: IBMPlexSans, sans-serif;
+        }
+
+        .opps {
+            width: 650px;
+            /* height: 1088px; */
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin: 40px auto;
+            overflow: hidden;
+            border: 1px solid #b0afb5;
+
+            background-color: #fafafa;
+        }
+
+        .opps-header {
+            background-color: #243b7a;
+            color: white;
+            height: 199px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="opps">
+        <div class="opps-header">
+            <div style=" text-align: center; padding-top: 20px; padding-bottom: 35px;">
+                <img src="{{hourglassIconUrl}}" width='81px' height='80px'>
+            </div>
+            <div>
+                <h4 style="text-align: center">Estamos procesando tu pedido</h4>
+            </div>
+        </div>
+        <div class="credivale-logo" style=" text-align:center; margin-top:20px; margin-bottom: 50px;">
+            <img src="https://credivale.mx/assets/images/credivale.png" alt="credivale logo"
+                style="width: 190px; height: 77px;">
+        </div>
+        <div class="payment-total" style="text-align: center;">
+            <p style="margin-bottom: 0; font-size: 21px;">Total de la compra</p>
+            <p style="margin-bottom: 0; font-size: 36px;">${{order.total}} MXN</p>
+        </div>
+        <div class="vale-data">
+            <div
+                style="text-align: center;  display: inline-block; width: 100%; margin-top: 30px; margin-bottom: 40px;">
+                <div style=" float:left; width: 50%;">
+                    <p style="margin-bottom: 5; font-size: 21px;">No. de Vale</p>
+                    <p style="margin-bottom: 0; font-size: 24px;">{{credivaleNumber}}</p>
+                </div>
+                <div style="float:left; width: 50%;">
+                    <p style="margin-bottom: 5; font-size: 21px;">Folio</p>
+                    <p style="margin-bottom: 0; font-size: 24px;">{{order.order}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="advice mt-4" style="margin-bottom: 200px">
+            <div class="row" style="font-size: 16; text-align:center; padding:0 50px; line-height: 1;">
+                Su pedido está en revisión. En cuanto esté autorizado recibirá un correo de GRUPO CALZAPATO S.A. DE C.V.
+                confirmando su pedido.
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

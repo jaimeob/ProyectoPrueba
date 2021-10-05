@@ -1,0 +1,30 @@
+{
+  "name": "participants",
+  "plural": "participants",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "userId": {
+      "type": "number"
+    },
+    "giveawayId": {
+      "type": "string"
+    },
+    "tickets": {
+      "type": "array"
+    },
+    "status": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

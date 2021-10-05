@@ -1,0 +1,36 @@
+{
+  "name": "Zone",
+  "plural": "zones",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "serie": {
+      "type": "string"
+    },
+    "stateCode": {
+      "type": "string"
+    },
+    "municipalityCode": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

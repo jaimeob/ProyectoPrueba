@@ -1,0 +1,136 @@
+<html>
+<head>
+  <style>
+    @font-face {
+      font-family: 'CircularStd-Black';
+      src: url('https://storage.googleapis.com/welcometolevel/CircularStd-Black.eot');
+      src: url('https://storage.googleapis.com/welcometolevel/CircularStd-Black.eot?#iefix') format('embedded-opentype'),
+          url('https://storage.googleapis.com/welcometolevel/CircularStd-Black.woff2') format('woff2'),
+          url('https://storage.googleapis.com/welcometolevel/CircularStd-Black.woff') format('woff'),
+          url('https://storage.googleapis.com/welcometolevel/CircularStd-Black.ttf')  format('truetype'),
+          url('https://storage.googleapis.com/welcometolevel/CircularStd-Black.svg#svgFontName') format('svg');
+      font-weight: 800;
+    }
+
+    @font-face {
+      font-family: 'CircularStd-Medium';
+      src: url('https://storage.googleapis.com/welcometolevel/CircularStd-Medium.eot');
+      src: url('https://storage.googleapis.com/welcometolevel/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+          url('https://storage.googleapis.com/welcometolevel/CircularStd-Medium.woff2') format('woff2'),
+          url('https://storage.googleapis.com/welcometolevel/CircularStd-Medium.woff') format('woff'),
+          url('https://storage.googleapis.com/welcometolevel/CircularStd-Medium.ttf')  format('truetype'),
+          url('https://storage.googleapis.com/welcometolevel/CircularStd-Medium.svg#svgFontName') format('svg');
+      font-weight: 400;
+    }
+
+    @font-face {
+      font-family: 'CircularStd-Book';
+      src: url('https://storage.googleapis.com/welcometolevel/CircularStd-Book.eot');
+      src: url('https://storage.googleapis.com/welcometolevel/CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+          url('https://storage.googleapis.com/welcometolevel/CircularStd-Book.woff2') format('woff2'),
+          url('https://storage.googleapis.com/welcometolevel/CircularStd-Book.woff') format('woff'),
+          url('https://storage.googleapis.com/welcometolevel/CircularStd-Book.ttf')  format('truetype'),
+          url('https://storage.googleapis.com/welcometolevel/CircularStd-Book.svg#svgFontName') format('svg');
+      font-weight: 200;
+    }
+
+    * {
+      font-family: 'CircularStd-Black', 'CircularStd-Medium', 'CircularStd-Book', sans-serif;
+      outline: none !important;
+    }
+
+    .title {
+      color: #2F3640;
+    }
+
+    .calzzapato {
+      color: #2F3640;
+    }
+
+    .content {
+      color: #353B48;
+      font-size: 14px;
+      font-family: 'CircularStd-Book';
+    }
+
+    .confirm-button {
+      background-color: #243B7A;
+      border-radius: 6px;
+      padding: 10px 28px;
+      width: 80%;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+    }
+
+    .confirm-button:hover {
+      background-color: #1b2c5c;
+    }
+
+    .logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 30%;
+    }
+
+    .container1 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
+
+    .container2 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 992px) {
+      .container1 {
+        width: 90%;
+      }
+
+      .container2 {
+        width: 90%;
+      }
+
+      .logo {
+        width: 90%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .container1 {
+        width: 100%;
+      }
+
+      .container2 {
+        width: 100%;
+      }
+
+      .logo {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container1">
+    <img class="logo" src="https://i.imgur.com/HcaXIcC.png">
+    <div class="container2">
+      <h1 class="title">¡Cuenta vinculada con Facebook!</h1>
+      <p class="content">Hola {{user.name}} {{user.firstLastName}}. Haz vinculado tu cuenta Calzzapato.com con tu cuenta Facebook de manera exitosa.</p>
+      <br><strong class="calzzapato">Atte. Equipo Calzzapato.com ®</strong>
+    </div>
+  </div>
+</body>
+
+</html>

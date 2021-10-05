@@ -1,0 +1,57 @@
+<html>
+<head>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+             Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+         .confirm-button:hover {
+             background-color: #1B2C5C;
+         }
+         .button {
+         color: white;
+         background-color: Transparent;
+         background-repeat:no-repeat;
+         border: none;
+         font-size: 14px;
+       }
+     </style>
+ </head>
+ <body>
+     <div style="display: block;margin-left: auto;margin-right: auto;width: 70%;">
+        <img style="display: block;margin-left: auto;margin-right: auto;width: 50%;" src="https://i.imgur.com/HcaXIcC.png">
+        <div style="display: block;margin-left: auto;margin-right: auto;width: 70%;text-align: center;">
+          <h1 style="color: #2F3640;">Newsletter</h1>
+          <p style="color: #353B48;font-size: 14px;">Hola gracias por subscribirte al newsletter de
+            <a href="www.calzzapato.com">www.calzzapato.com</a>.
+            <br>Favor de confirmar la subscripción haciendo click en el botón.
+          </p>
+          <br>
+          <a href="http://{{url}}:3000/subscripcion-newsletter-valida?email={{email}}" style="background-color: #243B7A;
+            border-radius: 6px;
+            padding: 10px 28px;
+            width: 70%;
+            color: white;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.1);
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;" target="_parent"
+          >
+            <button style="color: white;
+              background-color: Transparent;
+              background-repeat:no-repeat;
+              border: none;
+              font-size: 14px;"
+            >
+              <strong>CONFIRMAR</strong></button>
+          </a>
+          <img src="{{facebook}}" />
+          <br><br>
+          <strong style="color: black">Atte. Equipo Calzzapato.com ®</strong>
+        </div>
+    </div>
+  </body>
+</html>

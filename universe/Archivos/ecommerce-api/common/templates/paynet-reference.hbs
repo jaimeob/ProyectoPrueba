@@ -1,0 +1,381 @@
+{{!-- <html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <style type="text/css" media="all" rel="stylesheet">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-size: 14px;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .opps {
+      width: 496px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      padding: 0 45px;
+      margin: 40px auto;
+      overflow: hidden;
+      border: 1px solid #b0afb5;
+      font-family: 'Open Sans', sans-serif;
+      color: #4f5365;
+    }
+
+    .opps-reminder {
+      position: relative;
+      top: -1px;
+      padding: 9px 0 10px;
+      font-size: 11px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #ffffff;
+      background: #000000;
+    }
+
+    .opps-info {
+      margin-top: 26px;
+      position: relative;
+    }
+
+    .opps-info:after {
+      visibility: hidden;
+      display: block;
+      font-size: 0;
+      content: " ";
+      clear: both;
+      height: 0;
+
+    }
+
+    .opps-brand {
+      width: 45%;
+      float: left;
+    }
+
+    .opps-brand img {
+      max-width: 150px;
+      margin-top: 2px;
+    }
+
+    .opps-ammount {
+      width: 55%;
+      float: right;
+    }
+
+    .opps-ammount h2 {
+      font-size: 36px;
+      color: #000000;
+      line-height: 24px;
+      margin-bottom: 15px;
+    }
+
+    .opps-ammount h2 sup {
+      font-size: 16px;
+      position: relative;
+      top: -2px
+    }
+
+    .opps-ammount p {
+      font-size: 10px;
+      line-height: 14px;
+      margin-bottom: 32px;
+    }
+
+    .opps-reference {
+      width: '100%';
+      margin-top: 28px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #000000;
+      text-align: center;
+      margin-top: -1px;
+      padding: 6px 0 7px;
+      border: 1px solid #b0afb5;
+      border-radius: 4px;
+      background: #f8f9fa;
+    }
+
+    .opps-instructions {
+      margin: 32px -45px 0;
+      padding: 32px 45px 45px;
+      border-top: 1px solid #b0afb5;
+      background: #f8f9fa;
+    }
+
+    ol {
+      margin: 17px 0 0 16px;
+    }
+
+    li+li {
+      margin-top: 10px;
+      color: #000000;
+    }
+
+    a {
+      color: #1155cc;
+    }
+
+    .opps-footnote {
+      margin-top: 22px;
+      padding: 22px 20 24px;
+      color: #108f30;
+      text-align: center;
+      border: 1px solid #108f30;
+      border-radius: 4px;
+      background: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="opps">
+    <div class="opps-header">
+      <div class="opps-reminder">Ficha digital. No es necesario imprimir.</div>
+      <div class="opps-info">
+        <div class="opps-brand"><img src="https://www.openpay.mx/wp-content/uploads/2020/11/logo-paynet.png"
+            alt="Paynet" /></div>
+        <div class="opps-ammount">
+          <h3>Total a pagar</h3>
+          <h2>${{amount}} <sup>MXN</sup></h2>
+          <p>La comisión por recepción del pago varía de acuerdo a los términos y condiciones que cada cadena comercial
+            establece.</p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="opps-reference">
+        <h3>Referencia</h3>
+        <h1>
+          {{reference}}
+        </h1>
+        <br />
+        <div style="text-align: center;">
+          <img style="width: 250px;" src={{barcode}} alt="Barcode-reference">
+        </div>
+        <br>
+
+        <br />
+        <div style="text-align: center;">
+          <p><strong>Acude a cualquiera de estos establecimientos</strong></p>
+          <br />
+          <img style="width: 300px"
+            src="https://www.openpay.mx/wp-content/uploads/2021/03/Openpay_cadenas-afiliadas.png" alt="Casa Ley" />
+          <br>
+          <a href={{ticket}} target="_blank" rel="noopener noreferrer">Datos de la compra</a>
+        </div>
+        <br />
+      </div>
+    </div>
+    <div class="opps-instructions">
+      <h3>Como realizar el pago</h3>
+      <ol>
+        <li>Acude a cualquier tienda afiliada</li>
+        <li>Entrega al cajero el código de barras y menciona que realizarás un pago de servicio Paynet</li>
+        <li>Realizar el pago en efectivo</li>
+        <li>Conserva el ticket para cualquier aclaración</li>
+      </ol>
+
+      <div class="opps-footnote">Al completar estos pasos recibirás un correo de <strong>GRUPO CALZAPATO S.A. DE
+          C.V.</strong> confirmando tu pago.</div>
+    </div>
+    <br>
+    <br>
+    <div class="opps-instructions">
+      <h3>Instrucciones para el cajero</h3>
+      <ol>
+        <li>Ingresar al menú de Pago de Servicios</li>
+        <li>Seleccionar Paynet</li>
+        <li>Escanear el código de barras o ingresar el núm. de referencia</li>
+        <li>Ingresa la cantidad total a pagar</li>
+        <li>Cobrar al cliente el monto total más la comisión</li>
+        <li>Confirmar la transacción y entregar el ticket al cliente</li>
+      </ol>
+
+      <div class="opps-footnote">Al completar estos pasos recibirás un correo de <strong>GRUPO CALZAPATO S.A. DE
+          C.V.</strong> confirmando tu pago.</div>
+    </div>
+    <br><br>
+
+    <div>
+      <div style="text-align: center;">
+        <p>Powered by</p>
+      </div>
+      <div style="text-align: center;">
+        <img style="width: 100px;" src="https://www.calzzapato.com/openpay.png" alt="Openpay" />
+      </div>
+    </div>
+  </div>
+</body>
+
+</html> --}}
+
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style type="text/css" media="all" rel="stylesheet">
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: IBMPlexSans, sans-serif;
+    }
+
+    .opps {
+      width: 650px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin: 40px auto;
+      overflow: hidden;
+      border: 1px solid #b0afb5;
+      background-color: #fafafa;
+    }
+
+    .opps-header {
+      background-color: #243b7a;
+      color: white;
+      height: 230px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="opps">
+    <div class="opps-header" style="padding-bottom: 10px">
+      <div style="text-align: center; padding: 20px 0;">
+        <img src="{{storeIconUrl}}" alt="Store Icon" width="81px" height="80px">
+
+      </div>
+      <div style="margin-bottom: 20px;">
+        <h4 style="text-align: center; font-size: 24px;">Quedamos en espera de su pago</h4>
+      </div>
+      <div>
+        <p style="text-align: center; font-size: 16px;">Pague en efectivo de forma segura escaneando su<br>ticket de
+          pago.</p>
+      </div>
+    </div>
+    <div class="opps-payment-limit-day" style="margin-bottom: 20px; text-align:center;">
+      <img src="https://www.openpay.mx/wp-content/uploads/2020/11/logo-paynet.png" alt="Paynet logo" width="200.4px"
+        height="93px" style=" width: 200.4px; height: 93px;" />
+    </div>
+    {{!-- <div class="opps-payment-limit-day" style="margin-bottom: 20px;">
+      <div style="margin-top: 20px;  display: inline-block; width: 100%;">
+        <div style="width: min-content; float: left; padding-left: 30px;">
+          <img src="https://www.openpay.mx/wp-content/uploads/2020/11/logo-paynet.png" alt="Paynet logo" width="200.4px"
+            height="93px" style=" width: 200.4px; height: 93px;" />
+        </div>
+        <div style="text-align: center; font-weight: 500; width: 152px; float: right; padding: 25px 40px; ">
+          Fecha límite de pago<br>28/11/2016
+        </div>
+      </div>
+    </div> --}}
+    <div class="opps-payment-amount">
+      <div>
+        <p style="text-align: center; margin-bottom: 0; font-size: 21px; margin-top: 30px;">
+          Monto a pagar
+        </p>
+        <p style="text-align: center; font-size: 36px; font-weight: 500;">
+          ${{amount}} MXN
+        </p>
+      </div>
+    </div>
+    <div class="opps-reference" style="margin-bottom: 30px;">
+      <div>
+        <p style="text-align: center; margin-bottom: 0; font-size: 21px; margin-top: 30px;">
+          Referencia
+        </p>
+        <p style="text-align: center; font-size: 24px; font-weight: 500;">
+          {{reference}}
+        </p>
+      </div>
+    </div>
+    <div class="opps-barcode" style="margin-bottom: 20px;">
+      <div style=" text-align:center;">
+        <img src="{{barcode}}" alt="" style="width: 197px; height: 88px; ">
+      </div>
+    </div>
+    <div class="opps-advice" style="margin-bottom: 20px;">
+      <p style="text-align: center;  font-size: 16px;">
+        Acude a cualquiera de estos establecimientos
+      </p>
+    </div>
+    <div class="stores" style="margin-bottom: 20px; text-align: center;">
+      <img src="https://www.openpay.mx/wp-content/uploads/2021/03/Openpay_cadenas-afiliadas.png" alt="Stores"
+        width="344.2px" height="154px">
+    </div>
+    <div class="advice" style="margin-bottom:20px;">
+      <p style="text-align: center;  font-size: 16; padding: 0 40px;">
+        La comisión por recepción del pago varía de acuerdo a los términos y condiciones que cada cadena comercial
+        establece.
+      </p>
+    </div>
+    <div class="payment-data-button" style=" margin-bottom: 40px; margin-top: 40px; text-align: center;">
+      <a href="{{ticket}}" target="_blank" rel="noopener noreferrer"
+        style="background-color: #243b7a;  border-radius: 5px; color:white; font-weight: 600; font-size: 18px; text-decoration: none; padding: 15px 30px;">
+        Datos de la compra
+      </a>
+    </div>
+    <div class="opps-instructions">
+      <p style="text-align: center; font-size: 21px; margin-bottom: 20px;">
+        ¿Cómo realizar el pago?
+      </p>
+      <div style="padding: 0 55px; margin-bottom: 20px;">
+        <ol style="line-height: normal;">
+          <li>Acude a cualquier tienda afiliada</li>
+          <li>Entrega al cajero el código de barras y menciona que realizarás un pago de servicio Paynet</li>
+          <li>Realizar el pago en efectivo</li>
+          <li>Conserva el ticket para cualquier aclaración</li>
+        </ol>
+      </div>
+    </div>
+    <div class="opps-confirmation " style="padding: 0 35px; margin-bottom: 20px;">
+      <p>
+        Al completar estos pasos recibirás un correo de GRUPO CALZAPATO S.A. DE C.V. confirmando tu pago.
+      </p>
+    </div>
+    <div class="opps-cashier-instructions">
+      <p style="text-align: center; ; font-size: 21px; margin-bottom: 20px;">
+        Instrucciones para el cajero
+      </p>
+      <div style="padding: 0 55px; margin-bottom: 20px;">
+        <ol style="line-height: normal;">
+          <li>Ingresar al menú de Pago de Servicios</li>
+          <li>Seleccionar Paynet</li>
+          <li>Escanear el código de barras o ingresar el núm. de referencia</li>
+          <li>Ingresar la cantidad total a pagar</li>
+          <li>Cobrar al cliente el monto total más la comisión</li>
+          <li>Confirmar la transacción y entregar el ticket al cliente</li>
+        </ol>
+      </div>
+    </div>
+    <div class="opps-confirmation " style="padding: 0 35px; margin-bottom: 50px;">
+      <div style="text-align: center;">
+        <p>
+          Al completar estos pasos recibirás un correo de GRUPO CALZAPATO S.A. DE C.V. confirmando tu pago.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

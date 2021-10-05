@@ -1,0 +1,123 @@
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style type="text/css" media="all" rel="stylesheet">
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: IBMPlexSans, sans-serif;
+    }
+
+    .opps {
+      width: 650px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin: 40px auto;
+      overflow: hidden;
+      border: 1px solid #b0afb5;
+      background-color: #fafafa;
+    }
+
+    .opps-header {
+      background-color: #243b7a;
+      color: white;
+      height: 230px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="opps">
+    <div class="opps-header" style="padding-bottom: 10px">
+      <div style="text-align: center; padding: 20px 0;">
+        <img src="{{storeIconUrl}}" alt="Store Icon" width='81px' height='80px'>
+      </div>
+      <div style="margin-bottom: 20px;">
+        <h4 style="text-align: center; font-size: 24px;">Quedamos en espera de su pago</h4>
+      </div>
+      <div>
+        <p style="text-align: center; font-size: 16px;">Pague en efectivo de forma segura escaneando su<br>ticket de
+          pago.</p>
+      </div>
+    </div>
+    <div class="opps-payment-limit-day">
+      <div style="margin-top: 20px;  display: inline-block; width: 100%;">
+        <div style="width: min-content; float: left; padding-left: 30px;">
+          <img src="https://oxxo-com.s3.amazonaws.com/media-library/66cacc94a6184766eeba70effc283c82.png" alt="Oxxo Pay"
+            style=" width: 200.4px; height: 63px;" />
+        </div>
+        <div style="text-align: center; font-weight: 500; width: 152px; float: right; padding: 15px 40px; ">
+          Fecha límite de pago<br>{{limitDay}}
+        </div>
+      </div>
+    </div>
+    <div class="opps-payment-amount">
+      <div>
+        <p style="text-align: center; margin-bottom: 0; font-size: 21px; margin-top: 30px;">
+          Monto a pagar
+        </p>
+        <p style="text-align: center; font-size: 36px; font-weight: 500;">
+          ${{amount}} MXN
+        </p>
+      </div>
+    </div>
+    <div class="opps-reference" style="margin-bottom: 30px;">
+      <div>
+        <p style="text-align: center; margin-bottom: 0; font-size: 21px; margin-top: 30px;">
+          Referencia
+        </p>
+        <p style="text-align: center; font-size: 24px; font-weight: 500;">
+          {{reference}}
+        </p>
+      </div>
+    </div>
+    <div class="opps-barcode" style="margin-bottom: 10px;">
+      <div style=" text-align:center;">
+        <img src="{{barcode}}" alt="" style="width: 197px; height: 88px; ">
+      </div>
+    </div>
+    <div class="opps-barcode-text" style="margin-bottom: 30px;">
+      <p style="text-align: center; margin-bottom: 0; font-size: 16px;">
+        Código de barra:
+      </p>
+      <p style="text-align: center; font-size: 16px; font-weight: 500;">
+        {{referenceWithoutFormat}}
+      </p>
+    </div>
+    <div class="opps-advice" style=" padding: 0 80px; margin-bottom: 20px;">
+      <p style="text-align: center; font-size: 16px;">
+        OXXO cobrará una comisión adicional al momento de realizar el pago.
+      </p>
+    </div>
+    <div class="opps-instructions">
+      <p style="text-align: center; font-size: 21px; font-weight: 500; margin-bottom: 20px;">
+        Instrucciones
+      </p>
+      <div style="padding: 0 60px; margin-bottom: 40px;">
+        <ol style="line-height: normal;">
+          <li>Acude a la tienda OXXO más cercana. <a href="https://www.google.com.mx/maps/search/oxxo/" target="_blank"
+              style="text-decoration: none;">Encuéntrala aquí.</a> </li>
+          <li>Indica en caja que quieres realizar un pago de OXXO Pay.</li>
+          <li>Dicta al cajero el número de referencia en esta ficha para que tecleé directamente en la pantalla de
+            venta.</li>
+          <li>Realiza el pago correspondiente con dinero en efectivo.</li>
+          <li>Al confirmar tu pago, el cajero te entregará un comprobante impreso. En el podrás verificar que se haya
+            realizado correctamente. Conserva este comprobante de pago.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="opps-confirmation " style="padding: 0 30px; margin-bottom: 50px;">
+      <p>
+        Al completar estos pasos recibirás un correo de GRUPO CALZAPATO S.A. DE C.V. confirmando tu pago.
+      </p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

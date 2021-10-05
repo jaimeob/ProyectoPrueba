@@ -1,0 +1,36 @@
+{
+  "name": "Zone",
+  "plural": "zones",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mysql": {
+    "table": "plazas"
+  },
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "serie": {
+      "type": "string"
+    },
+    "estado_codigo": {
+      "type": "number"
+    },
+    "municipio_codigo": {
+      "type": "number"
+    },
+    "clave_plaza": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

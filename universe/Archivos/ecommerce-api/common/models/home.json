@@ -1,0 +1,45 @@
+{
+  "name": "Home",
+  "plural": "homes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "configId": {
+      "type": "number"
+    },
+    "headbandShow": {
+      "type": "boolean"
+    },
+    "headbandMessage": {
+      "type": "string"
+    },
+    "headbandLink": {
+      "type": "string"
+    },
+    "headbandTextColor": {
+      "type": "string"
+    },
+    "headbandBackgroundColor": {
+      "type": "string"
+    },
+    "mainBannerId": {
+      "type": "number"
+    },
+    "headbandImage": {
+      "type": "string"
+    },
+    "headbandResponsiveImage": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

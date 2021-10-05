@@ -1,0 +1,67 @@
+{
+  "name": "Location",
+  "plural": "locations",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "code": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "string"
+    },
+    "locationTypeCode": {
+      "type": "string"
+    },
+    "stateCode": {
+      "type": "string"
+    },
+    "municipalityCode": {
+      "type": "string"
+    },
+    "municipalityStateCode": {
+      "type": "string"
+    },
+    "locationMunicipalityStateCode": {
+      "type": "string"
+    },
+    "cityCode": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "zone": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "type": {
+      "type": "belongsTo",
+      "model": "LocationType",
+      "foreignKey": "locationTypeCode",
+      "primaryKey": "code"
+    },
+    "state": {
+      "type": "belongsTo",
+      "model": "State",
+      "foreignKey": "stateCode",
+      "primaryKey": "code"
+    },
+    "municipality": {
+      "type": "belongsTo",
+      "model": "Municipality",
+      "foreignKey": "municipalityStateCode",
+      "primaryKey": "municipalityStateCode"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

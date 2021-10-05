@@ -1,0 +1,42 @@
+{
+  "name": "Color",
+  "plural": "colors",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mysql": {
+    "table": "marcas_colores"
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "marca_id": {
+      "type": "number"
+    },
+    "color": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "date"
+    },
+    "updated_at": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "marca": {
+      "type": "belongsTo",
+      "model": "Brand",
+      "foreignKey": "marca_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
